@@ -1,0 +1,46 @@
+# Azure Search/OpenAI/Cosmos credentials come from the `meridian-triage-secrets`
+# Secret (created imperatively from .env — see AKS deploy steps — never committed).
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: meridian-triage-api
+  namespace: meridian
+  labels:
+    app: meridian-triage-api
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: meridian-triage-api
+  template:
+    metadata:
+      labels:
+        app: meridian-triage-api
+    spec:
+      containers:
+        - name: meridian-triage-api
+          image: meridiantriageacr.azurecr.io/meridian-triage-api:latest
+          ports:
+            - containerPort: 8000
+          envFrom:
+            - secretRef:
+                name: meridian-triage-secrets
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8000
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8000
+            initialDelaySeconds: 15
+            periodSeconds: 20
+          resources:
+            requests:
+              cpu: 250m
+              memory: 256Mi
+            limits:
+              cpu: 500m
+              memory: 512Mi

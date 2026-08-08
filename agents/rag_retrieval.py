@@ -11,10 +11,10 @@ Requires the same .env vars as ingestion/index_to_azure_search.py.
 
 import os
 
-from dotenv import load_dotenv
 from azure.core.credentials import AzureKeyCredential
 from azure.search.documents import SearchClient
 from azure.search.documents.models import VectorizedQuery
+from dotenv import load_dotenv
 from openai import AzureOpenAI
 
 load_dotenv()

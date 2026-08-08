@@ -148,15 +148,33 @@ python eval/run_eval.py
 streamlit run app/app.py
 ```
 
+## Testing
+
+```bash
+pip install -r requirements-dev.txt
+pytest
+```
+
+Unit tests only — no live Azure calls. Every Azure OpenAI, Azure AI Search,
+and Cosmos DB Gremlin client is mocked at the boundary (`tests/conftest.py`
+supplies fake credentials so the modules import cleanly without a real
+`.env`), so the suite runs in under 2 seconds and never touches — or needs
+access to — the real resources. Covers the triage graph's routing and
+fallback logic (including the timeout/degradation paths in
+`agents/triage_graph.py`), the FastAPI layer, and the Cosmos/RAG
+query-building and response-mapping logic.
+
 ## Repo layout
 
 ```
 data/               synthetic alerts, eval labels, playbooks, MITRE ATT&CK subset
 ingestion/          synthetic data generation + RAG indexing
-graph/              entity relationship graph (NetworkX)
+graph/              entity relationship graph (NetworkX) + Cosmos DB Gremlin backend
 agents/             RAG retrieval + LangGraph analyst/reviewer pipeline
+api/                FastAPI REST layer over the triage pipeline
 eval/               scoring harness + results
 app/                Streamlit UI
+tests/              pytest suite (mocked Azure dependencies)
 ```
 
 

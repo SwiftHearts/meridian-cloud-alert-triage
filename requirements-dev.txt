@@ -1,0 +1,4 @@
+# Test-only dependencies — not needed to run the app itself.
+pytest>=7.4
+httpx>=0.24  # used by fastapi.testclient.TestClient
+ruff>=0.16

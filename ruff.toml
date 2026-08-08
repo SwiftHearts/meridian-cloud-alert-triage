@@ -1,0 +1,10 @@
+line-length = 100
+target-version = "py312"
+extend-exclude = ["ingestion", "eval"]
+
+[lint]
+select = ["E", "F", "I"]
+ignore = ["E501"]
+
+[lint.per-file-ignores]
+"agents/triage_graph.py" = ["E402"]
