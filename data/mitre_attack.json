@@ -1,0 +1,210 @@
+[
+  {
+    "technique_id": "T1078",
+    "name": "Valid Accounts",
+    "tactic": "Defense Evasion, Persistence, Privilege Escalation, Initial Access",
+    "description": "Adversaries obtain and abuse credentials of existing accounts to gain initial access, persistence, or elevated privileges, often evading detection because the activity looks like normal user behavior.",
+    "alert_types": ["anomalous_login"],
+    "reference_url": "https://attack.mitre.org/techniques/T1078/"
+  },
+  {
+    "technique_id": "T1110",
+    "name": "Brute Force",
+    "tactic": "Credential Access",
+    "description": "Adversaries use repeated login attempts to guess credentials without prior knowledge of valid passwords.",
+    "alert_types": ["anomalous_login"],
+    "reference_url": "https://attack.mitre.org/techniques/T1110/"
+  },
+  {
+    "technique_id": "T1110.003",
+    "name": "Password Spraying",
+    "tactic": "Credential Access",
+    "description": "A brute-force variant using a single common password against many accounts to avoid account lockout thresholds.",
+    "alert_types": ["anomalous_login"],
+    "reference_url": "https://attack.mitre.org/techniques/T1110/003/"
+  },
+  {
+    "technique_id": "T1098",
+    "name": "Account Manipulation",
+    "tactic": "Persistence, Privilege Escalation",
+    "description": "Adversaries modify account permissions, group membership, or credentials to maintain access, such as adding an account to a privileged group.",
+    "alert_types": ["privilege_escalation"],
+    "reference_url": "https://attack.mitre.org/techniques/T1098/"
+  },
+  {
+    "technique_id": "T1136",
+    "name": "Create Account",
+    "tactic": "Persistence",
+    "description": "Adversaries create new accounts (local, domain, or cloud) to maintain access to a victim environment.",
+    "alert_types": ["privilege_escalation"],
+    "reference_url": "https://attack.mitre.org/techniques/T1136/"
+  },
+  {
+    "technique_id": "T1548",
+    "name": "Abuse Elevation Control Mechanism",
+    "tactic": "Privilege Escalation, Defense Evasion",
+    "description": "Adversaries bypass mechanisms designed to control elevated privileges, such as Windows UAC, to gain higher-level permissions.",
+    "alert_types": ["privilege_escalation"],
+    "reference_url": "https://attack.mitre.org/techniques/T1548/"
+  },
+  {
+    "technique_id": "T1068",
+    "name": "Exploitation for Privilege Escalation",
+    "tactic": "Privilege Escalation",
+    "description": "Adversaries exploit software vulnerabilities to elevate privileges beyond what was granted by a misconfiguration or intended access level.",
+    "alert_types": ["privilege_escalation"],
+    "reference_url": "https://attack.mitre.org/techniques/T1068/"
+  },
+  {
+    "technique_id": "T1059",
+    "name": "Command and Scripting Interpreter",
+    "tactic": "Execution",
+    "description": "Adversaries abuse command and script interpreters (PowerShell, Windows Command Shell, bash) to execute commands and payloads.",
+    "alert_types": ["suspicious_process"],
+    "reference_url": "https://attack.mitre.org/techniques/T1059/"
+  },
+  {
+    "technique_id": "T1059.001",
+    "name": "PowerShell",
+    "tactic": "Execution",
+    "description": "Adversaries abuse PowerShell for execution, often with obfuscated or encoded commands to evade detection.",
+    "alert_types": ["suspicious_process"],
+    "reference_url": "https://attack.mitre.org/techniques/T1059/001/"
+  },
+  {
+    "technique_id": "T1218",
+    "name": "System Binary Proxy Execution",
+    "tactic": "Defense Evasion",
+    "description": "Adversaries abuse trusted, signed system binaries (certutil, rundll32, regsvr32) to proxy execution of malicious payloads and evade application controls.",
+    "alert_types": ["suspicious_process"],
+    "reference_url": "https://attack.mitre.org/techniques/T1218/"
+  },
+  {
+    "technique_id": "T1027",
+    "name": "Obfuscated Files or Information",
+    "tactic": "Defense Evasion",
+    "description": "Adversaries encode, encrypt, or otherwise obfuscate content (e.g. base64-encoded PowerShell) to evade detection and analysis.",
+    "alert_types": ["suspicious_process"],
+    "reference_url": "https://attack.mitre.org/techniques/T1027/"
+  },
+  {
+    "technique_id": "T1105",
+    "name": "Ingress Tool Transfer",
+    "tactic": "Command and Control",
+    "description": "Adversaries transfer tools or files from an external system into a compromised environment, e.g. via download cradles.",
+    "alert_types": ["suspicious_process", "unusual_outbound_network"],
+    "reference_url": "https://attack.mitre.org/techniques/T1105/"
+  },
+  {
+    "technique_id": "T1003",
+    "name": "OS Credential Dumping",
+    "tactic": "Credential Access",
+    "description": "Adversaries dump credentials (e.g. via Mimikatz) from operating system memory or storage to obtain account credentials for reuse.",
+    "alert_types": ["suspicious_process", "lateral_movement"],
+    "reference_url": "https://attack.mitre.org/techniques/T1003/"
+  },
+  {
+    "technique_id": "T1055",
+    "name": "Process Injection",
+    "tactic": "Defense Evasion, Privilege Escalation",
+    "description": "Adversaries inject code into legitimate processes to evade defenses and elevate privileges.",
+    "alert_types": ["suspicious_process"],
+    "reference_url": "https://attack.mitre.org/techniques/T1055/"
+  },
+  {
+    "technique_id": "T1071",
+    "name": "Application Layer Protocol",
+    "tactic": "Command and Control",
+    "description": "Adversaries use common application-layer protocols to blend command-and-control traffic with legitimate network traffic.",
+    "alert_types": ["unusual_outbound_network"],
+    "reference_url": "https://attack.mitre.org/techniques/T1071/"
+  },
+  {
+    "technique_id": "T1071.004",
+    "name": "DNS",
+    "tactic": "Command and Control",
+    "description": "Adversaries use the DNS protocol for command-and-control or data exfiltration (tunneling), often visible as high-entropy subdomain queries.",
+    "alert_types": ["unusual_outbound_network"],
+    "reference_url": "https://attack.mitre.org/techniques/T1071/004/"
+  },
+  {
+    "technique_id": "T1041",
+    "name": "Exfiltration Over C2 Channel",
+    "tactic": "Exfiltration",
+    "description": "Adversaries exfiltrate data over the same channel used for command and control, rather than a separate exfiltration channel.",
+    "alert_types": ["unusual_outbound_network"],
+    "reference_url": "https://attack.mitre.org/techniques/T1041/"
+  },
+  {
+    "technique_id": "T1048",
+    "name": "Exfiltration Over Alternative Protocol",
+    "tactic": "Exfiltration",
+    "description": "Adversaries exfiltrate data using a different protocol than the one used for command and control, such as FTP or a non-standard port.",
+    "alert_types": ["unusual_outbound_network"],
+    "reference_url": "https://attack.mitre.org/techniques/T1048/"
+  },
+  {
+    "technique_id": "T1090",
+    "name": "Proxy",
+    "tactic": "Command and Control",
+    "description": "Adversaries route traffic through an intermediary to obscure the true source or destination of network communications.",
+    "alert_types": ["unusual_outbound_network"],
+    "reference_url": "https://attack.mitre.org/techniques/T1090/"
+  },
+  {
+    "technique_id": "T1021",
+    "name": "Remote Services",
+    "tactic": "Lateral Movement",
+    "description": "Adversaries use valid accounts to log into remote services (RDP, SMB/Windows Admin Shares) to move laterally within an environment.",
+    "alert_types": ["lateral_movement"],
+    "reference_url": "https://attack.mitre.org/techniques/T1021/"
+  },
+  {
+    "technique_id": "T1021.001",
+    "name": "Remote Desktop Protocol",
+    "tactic": "Lateral Movement",
+    "description": "Adversaries use RDP to log into a remote host interactively as part of lateral movement.",
+    "alert_types": ["lateral_movement"],
+    "reference_url": "https://attack.mitre.org/techniques/T1021/001/"
+  },
+  {
+    "technique_id": "T1570",
+    "name": "Lateral Tool Transfer",
+    "tactic": "Lateral Movement",
+    "description": "Adversaries copy tools or files between systems in a compromised environment to support further lateral movement or execution.",
+    "alert_types": ["lateral_movement"],
+    "reference_url": "https://attack.mitre.org/techniques/T1570/"
+  },
+  {
+    "technique_id": "T1569",
+    "name": "System Services",
+    "tactic": "Execution",
+    "description": "Adversaries abuse system service mechanisms (e.g. PsExec-style remote service creation) to execute commands or payloads on remote hosts.",
+    "alert_types": ["lateral_movement"],
+    "reference_url": "https://attack.mitre.org/techniques/T1569/"
+  },
+  {
+    "technique_id": "T1550",
+    "name": "Use Alternate Authentication Material",
+    "tactic": "Defense Evasion, Lateral Movement",
+    "description": "Adversaries use stolen authentication material (e.g. password hashes) to move laterally without needing the plaintext credential (pass-the-hash).",
+    "alert_types": ["lateral_movement"],
+    "reference_url": "https://attack.mitre.org/techniques/T1550/"
+  },
+  {
+    "technique_id": "T1087",
+    "name": "Account Discovery",
+    "tactic": "Discovery",
+    "description": "Adversaries enumerate local, domain, or cloud accounts to plan further action, often preceding privilege escalation or lateral movement.",
+    "alert_types": ["privilege_escalation", "lateral_movement"],
+    "reference_url": "https://attack.mitre.org/techniques/T1087/"
+  },
+  {
+    "technique_id": "T1018",
+    "name": "Remote System Discovery",
+    "tactic": "Discovery",
+    "description": "Adversaries enumerate other systems on the network to plan lateral movement targets.",
+    "alert_types": ["lateral_movement"],
+    "reference_url": "https://attack.mitre.org/techniques/T1018/"
+  }
+]

@@ -1,0 +1,23 @@
+# Phase 1 (synthetic data) uses only the Python standard library — nothing to install yet.
+
+# Phase 2 — RAG layer
+azure-search-documents>=11.5
+azure-core>=1.30
+openai>=1.30          # or your embedding provider of choice
+
+# Phase 3 — entity graph
+networkx>=3.3
+
+# Phase 4 — multi-agent orchestration
+langchain>=0.2
+langgraph>=0.1
+langchain-openai>=0.1  # or your model provider's LangChain integration
+
+# Phase 5 — eval harness
+pandas>=2.2
+
+# Phase 6 — Streamlit UI
+streamlit>=1.36
+
+# Shared
+python-dotenv>=1.0

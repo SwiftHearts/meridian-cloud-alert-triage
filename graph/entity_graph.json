@@ -1,0 +1,7053 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "graph": {},
+  "nodes": [
+    {
+      "type": "host",
+      "value": "WKS-OFITZGERALD",
+      "id": "host:WKS-OFITZGERALD"
+    },
+    {
+      "type": "user",
+      "value": "npetrova",
+      "id": "user:npetrova"
+    },
+    {
+      "type": "ip",
+      "value": "10.42.10.31",
+      "id": "ip:10.42.10.31"
+    },
+    {
+      "type": "ip",
+      "value": "10.42.22.1",
+      "id": "ip:10.42.22.1"
+    },
+    {
+      "type": "process",
+      "value": "wmic.exe",
+      "id": "process:wmic.exe"
+    },
+    {
+      "type": "host",
+      "value": "app-01",
+      "id": "host:app-01"
+    },
+    {
+      "type": "ip",
+      "value": "10.42.21.1",
+      "id": "ip:10.42.21.1"
+    },
+    {
+      "type": "ip",
+      "value": "192.0.2.117",
+      "id": "ip:192.0.2.117"
+    },
+    {
+      "type": "host",
+      "value": "WKS-BOKAFOR",
+      "id": "host:WKS-BOKAFOR"
+    },
+    {
+      "type": "user",
+      "value": "bokafor",
+      "id": "user:bokafor"
+    },
+    {
+      "type": "ip",
+      "value": "10.42.10.200",
+      "id": "ip:10.42.10.200"
+    },
+    {
+      "type": "process",
+      "value": "certutil.exe",
+      "id": "process:certutil.exe"
+    },
+    {
+      "type": "host",
+      "value": "WKS-RSORENSON",
+      "id": "host:WKS-RSORENSON"
+    },
+    {
+      "type": "ip",
+      "value": "10.42.10.88",
+      "id": "ip:10.42.10.88"
+    },
+    {
+      "type": "ip",
+      "value": "192.0.2.220",
+      "id": "ip:192.0.2.220"
+    },
+    {
+      "type": "host",
+      "value": "WKS-ZHUSSAIN",
+      "id": "host:WKS-ZHUSSAIN"
+    },
+    {
+      "type": "ip",
+      "value": "10.42.10.216",
+      "id": "ip:10.42.10.216"
+    },
+    {
+      "type": "ip",
+      "value": "198.51.100.25",
+      "id": "ip:198.51.100.25"
+    },
+    {
+      "type": "host",
+      "value": "WKS-NPETROVA",
+      "id": "host:WKS-NPETROVA"
+    },
+    {
+      "type": "ip",
+      "value": "192.0.2.77",
+      "id": "ip:192.0.2.77"
+    },
+    {
+      "type": "host",
+      "value": "WKS-GALAOUI",
+      "id": "host:WKS-GALAOUI"
+    },
+    {
+      "type": "ip",
+      "value": "10.42.10.238",
+      "id": "ip:10.42.10.238"
+    },
+    {
+      "type": "ip",
+      "value": "203.0.113.15",
+      "id": "ip:203.0.113.15"
+    },
+    {
+      "type": "user",
+      "value": "ofitzgerald",
+      "id": "user:ofitzgerald"
+    },
+    {
+      "type": "process",
+      "value": "git.exe",
+      "id": "process:git.exe"
+    },
+    {
+      "type": "user",
+      "value": "galaoui",
+      "id": "user:galaoui"
+    },
+    {
+      "type": "host",
+      "value": "WKS-LCHEN",
+      "id": "host:WKS-LCHEN"
+    },
+    {
+      "type": "user",
+      "value": "lchen",
+      "id": "user:lchen"
+    },
+    {
+      "type": "ip",
+      "value": "10.42.10.19",
+      "id": "ip:10.42.10.19"
+    },
+    {
+      "type": "host",
+      "value": "WKS-TNOVAK",
+      "id": "host:WKS-TNOVAK"
+    },
+    {
+      "type": "user",
+      "value": "tnovak",
+      "id": "user:tnovak"
+    },
+    {
+      "type": "ip",
+      "value": "192.0.2.14",
+      "id": "ip:192.0.2.14"
+    },
+    {
+      "type": "host",
+      "value": "WKS-IDUBOIS",
+      "id": "host:WKS-IDUBOIS"
+    },
+    {
+      "type": "user",
+      "value": "idubois",
+      "id": "user:idubois"
+    },
+    {
+      "type": "ip",
+      "value": "203.0.113.211",
+      "id": "ip:203.0.113.211"
+    },
+    {
+      "type": "host",
+      "value": "WKS-IMACDONALD",
+      "id": "host:WKS-IMACDONALD"
+    },
+    {
+      "type": "user",
+      "value": "imacdonald",
+      "id": "user:imacdonald"
+    },
+    {
+      "type": "ip",
+      "value": "10.42.10.133",
+      "id": "ip:10.42.10.133"
+    },
+    {
+      "type": "process",
+      "value": "regsvr32.exe",
+      "id": "process:regsvr32.exe"
+    },
+    {
+      "type": "user",
+      "value": "dkim",
+      "id": "user:dkim"
+    },
+    {
+      "type": "host",
+      "value": "vpn-gw-01",
+      "id": "host:vpn-gw-01"
+    },
+    {
+      "type": "user",
+      "value": "svc_ci",
+      "id": "user:svc_ci"
+    },
+    {
+      "type": "ip",
+      "value": "10.42.24.1",
+      "id": "ip:10.42.24.1"
+    },
+    {
+      "type": "ip",
+      "value": "10.42.10.125",
+      "id": "ip:10.42.10.125"
+    },
+    {
+      "type": "host",
+      "value": "WKS-SALVAREZ",
+      "id": "host:WKS-SALVAREZ"
+    },
+    {
+      "type": "user",
+      "value": "salvarez",
+      "id": "user:salvarez"
+    },
+    {
+      "type": "ip",
+      "value": "10.42.10.95",
+      "id": "ip:10.42.10.95"
+    },
+    {
+      "type": "process",
+      "value": "robocopy.exe",
+      "id": "process:robocopy.exe"
+    },
+    {
+      "type": "host",
+      "value": "WKS-RFONTAINE",
+      "id": "host:WKS-RFONTAINE"
+    },
+    {
+      "type": "ip",
+      "value": "10.42.10.132",
+      "id": "ip:10.42.10.132"
+    },
+    {
+      "type": "ip",
+      "value": "10.42.23.1",
+      "id": "ip:10.42.23.1"
+    },
+    {
+      "type": "ip",
+      "value": "10.42.10.232",
+      "id": "ip:10.42.10.232"
+    },
+    {
+      "type": "ip",
+      "value": "203.0.113.10",
+      "id": "ip:203.0.113.10"
+    },
+    {
+      "type": "host",
+      "value": "WKS-MNGUYEN",
+      "id": "host:WKS-MNGUYEN"
+    },
+    {
+      "type": "user",
+      "value": "mnguyen",
+      "id": "user:mnguyen"
+    },
+    {
+      "type": "ip",
+      "value": "10.42.10.207",
+      "id": "ip:10.42.10.207"
+    },
+    {
+      "type": "process",
+      "value": "curl.exe",
+      "id": "process:curl.exe"
+    },
+    {
+      "type": "host",
+      "value": "app-02",
+      "id": "host:app-02"
+    },
+    {
+      "type": "ip",
+      "value": "10.42.21.2",
+      "id": "ip:10.42.21.2"
+    },
+    {
+      "type": "host",
+      "value": "WKS-TANDERSSON",
+      "id": "host:WKS-TANDERSSON"
+    },
+    {
+      "type": "user",
+      "value": "tandersson",
+      "id": "user:tandersson"
+    },
+    {
+      "type": "ip",
+      "value": "10.42.10.76",
+      "id": "ip:10.42.10.76"
+    },
+    {
+      "type": "host",
+      "value": "WKS-VHALE",
+      "id": "host:WKS-VHALE"
+    },
+    {
+      "type": "ip",
+      "value": "10.42.10.94",
+      "id": "ip:10.42.10.94"
+    },
+    {
+      "type": "ip",
+      "value": "10.42.25.1",
+      "id": "ip:10.42.25.1"
+    },
+    {
+      "type": "host",
+      "value": "WKS-MWEBB",
+      "id": "host:WKS-MWEBB"
+    },
+    {
+      "type": "ip",
+      "value": "10.42.10.136",
+      "id": "ip:10.42.10.136"
+    },
+    {
+      "type": "ip",
+      "value": "203.0.113.37",
+      "id": "ip:203.0.113.37"
+    },
+    {
+      "type": "user",
+      "value": "rsorenson",
+      "id": "user:rsorenson"
+    },
+    {
+      "type": "ip",
+      "value": "10.42.26.1",
+      "id": "ip:10.42.26.1"
+    },
+    {
+      "type": "process",
+      "value": "psexec.exe",
+      "id": "process:psexec.exe"
+    },
+    {
+      "type": "host",
+      "value": "WKS-DKIM",
+      "id": "host:WKS-DKIM"
+    },
+    {
+      "type": "ip",
+      "value": "10.42.10.39",
+      "id": "ip:10.42.10.39"
+    },
+    {
+      "type": "process",
+      "value": "winrm",
+      "id": "process:winrm"
+    },
+    {
+      "type": "user",
+      "value": "jwhitfield",
+      "id": "user:jwhitfield"
+    },
+    {
+      "type": "process",
+      "value": "mimikatz.exe",
+      "id": "process:mimikatz.exe"
+    },
+    {
+      "type": "host",
+      "value": "WKS-PRAMANATHAN",
+      "id": "host:WKS-PRAMANATHAN"
+    },
+    {
+      "type": "ip",
+      "value": "10.42.10.54",
+      "id": "ip:10.42.10.54"
+    },
+    {
+      "type": "ip",
+      "value": "192.0.2.218",
+      "id": "ip:192.0.2.218"
+    },
+    {
+      "type": "ip",
+      "value": "192.0.2.192",
+      "id": "ip:192.0.2.192"
+    },
+    {
+      "type": "user",
+      "value": "evasquez",
+      "id": "user:evasquez"
+    },
+    {
+      "type": "user",
+      "value": "zhussain",
+      "id": "user:zhussain"
+    },
+    {
+      "type": "process",
+      "value": "bash",
+      "id": "process:bash"
+    },
+    {
+      "type": "user",
+      "value": "pramanathan",
+      "id": "user:pramanathan"
+    },
+    {
+      "type": "host",
+      "value": "WKS-NPATEL",
+      "id": "host:WKS-NPATEL"
+    },
+    {
+      "type": "ip",
+      "value": "10.42.10.123",
+      "id": "ip:10.42.10.123"
+    },
+    {
+      "type": "host",
+      "value": "WKS-HLINDQVIST",
+      "id": "host:WKS-HLINDQVIST"
+    },
+    {
+      "type": "ip",
+      "value": "10.42.10.159",
+      "id": "ip:10.42.10.159"
+    },
+    {
+      "type": "process",
+      "value": "schtasks.exe",
+      "id": "process:schtasks.exe"
+    },
+    {
+      "type": "host",
+      "value": "db-01",
+      "id": "host:db-01"
+    },
+    {
+      "type": "ip",
+      "value": "192.0.2.15",
+      "id": "ip:192.0.2.15"
+    },
+    {
+      "type": "ip",
+      "value": "203.0.113.41",
+      "id": "ip:203.0.113.41"
+    },
+    {
+      "type": "user",
+      "value": "cbennett",
+      "id": "user:cbennett"
+    },
+    {
+      "type": "ip",
+      "value": "10.42.21.3",
+      "id": "ip:10.42.21.3"
+    },
+    {
+      "type": "host",
+      "value": "app-03",
+      "id": "host:app-03"
+    },
+    {
+      "type": "host",
+      "value": "WKS-CBENNETT",
+      "id": "host:WKS-CBENNETT"
+    },
+    {
+      "type": "ip",
+      "value": "10.42.10.150",
+      "id": "ip:10.42.10.150"
+    },
+    {
+      "type": "ip",
+      "value": "198.51.100.136",
+      "id": "ip:198.51.100.136"
+    },
+    {
+      "type": "ip",
+      "value": "198.51.100.56",
+      "id": "ip:198.51.100.56"
+    },
+    {
+      "type": "process",
+      "value": "powershell.exe",
+      "id": "process:powershell.exe"
+    },
+    {
+      "type": "host",
+      "value": "WKS-JWHITFIELD",
+      "id": "host:WKS-JWHITFIELD"
+    },
+    {
+      "type": "ip",
+      "value": "10.42.10.241",
+      "id": "ip:10.42.10.241"
+    },
+    {
+      "type": "process",
+      "value": "cmd.exe",
+      "id": "process:cmd.exe"
+    },
+    {
+      "type": "user",
+      "value": "vhale",
+      "id": "user:vhale"
+    },
+    {
+      "type": "host",
+      "value": "backup-01",
+      "id": "host:backup-01"
+    },
+    {
+      "type": "ip",
+      "value": "10.42.27.1",
+      "id": "ip:10.42.27.1"
+    },
+    {
+      "type": "ip",
+      "value": "198.51.100.23",
+      "id": "ip:198.51.100.23"
+    },
+    {
+      "type": "ip",
+      "value": "192.0.2.47",
+      "id": "ip:192.0.2.47"
+    },
+    {
+      "type": "user",
+      "value": "sdelacroix",
+      "id": "user:sdelacroix"
+    },
+    {
+      "type": "ip",
+      "value": "10.42.10.186",
+      "id": "ip:10.42.10.186"
+    },
+    {
+      "type": "host",
+      "value": "WKS-EVASQUEZ",
+      "id": "host:WKS-EVASQUEZ"
+    },
+    {
+      "type": "ip",
+      "value": "10.42.10.203",
+      "id": "ip:10.42.10.203"
+    },
+    {
+      "type": "ip",
+      "value": "198.51.100.20",
+      "id": "ip:198.51.100.20"
+    },
+    {
+      "type": "host",
+      "value": "WKS-GOSEI",
+      "id": "host:WKS-GOSEI"
+    },
+    {
+      "type": "ip",
+      "value": "10.42.10.142",
+      "id": "ip:10.42.10.142"
+    },
+    {
+      "type": "ip",
+      "value": "203.0.113.226",
+      "id": "ip:203.0.113.226"
+    },
+    {
+      "type": "ip",
+      "value": "203.0.113.254",
+      "id": "ip:203.0.113.254"
+    },
+    {
+      "type": "host",
+      "value": "db-02",
+      "id": "host:db-02"
+    },
+    {
+      "type": "ip",
+      "value": "10.42.22.2",
+      "id": "ip:10.42.22.2"
+    },
+    {
+      "type": "host",
+      "value": "WKS-EKOWALSKI",
+      "id": "host:WKS-EKOWALSKI"
+    },
+    {
+      "type": "user",
+      "value": "ekowalski",
+      "id": "user:ekowalski"
+    },
+    {
+      "type": "ip",
+      "value": "10.42.10.115",
+      "id": "ip:10.42.10.115"
+    },
+    {
+      "type": "host",
+      "value": "web-02",
+      "id": "host:web-02"
+    },
+    {
+      "type": "user",
+      "value": "rfontaine",
+      "id": "user:rfontaine"
+    },
+    {
+      "type": "ip",
+      "value": "10.42.20.2",
+      "id": "ip:10.42.20.2"
+    },
+    {
+      "type": "user",
+      "value": "mwebb",
+      "id": "user:mwebb"
+    },
+    {
+      "type": "process",
+      "value": "rundll32.exe",
+      "id": "process:rundll32.exe"
+    },
+    {
+      "type": "ip",
+      "value": "203.0.113.210",
+      "id": "ip:203.0.113.210"
+    },
+    {
+      "type": "process",
+      "value": "mstsc.exe",
+      "id": "process:mstsc.exe"
+    },
+    {
+      "type": "ip",
+      "value": "203.0.113.159",
+      "id": "ip:203.0.113.159"
+    },
+    {
+      "type": "host",
+      "value": "fileserver-01",
+      "id": "host:fileserver-01"
+    },
+    {
+      "type": "process",
+      "value": "docker.exe",
+      "id": "process:docker.exe"
+    },
+    {
+      "type": "ip",
+      "value": "198.51.100.55",
+      "id": "ip:198.51.100.55"
+    },
+    {
+      "type": "ip",
+      "value": "192.0.2.17",
+      "id": "ip:192.0.2.17"
+    },
+    {
+      "type": "ip",
+      "value": "203.0.113.244",
+      "id": "ip:203.0.113.244"
+    },
+    {
+      "type": "ip",
+      "value": "203.0.113.196",
+      "id": "ip:203.0.113.196"
+    },
+    {
+      "type": "ip",
+      "value": "198.51.100.130",
+      "id": "ip:198.51.100.130"
+    },
+    {
+      "type": "host",
+      "value": "WKS-SDELACROIX",
+      "id": "host:WKS-SDELACROIX"
+    },
+    {
+      "type": "ip",
+      "value": "10.42.10.165",
+      "id": "ip:10.42.10.165"
+    },
+    {
+      "type": "ip",
+      "value": "198.51.100.234",
+      "id": "ip:198.51.100.234"
+    },
+    {
+      "type": "ip",
+      "value": "203.0.113.45",
+      "id": "ip:203.0.113.45"
+    },
+    {
+      "type": "host",
+      "value": "web-01",
+      "id": "host:web-01"
+    },
+    {
+      "type": "ip",
+      "value": "10.42.20.1",
+      "id": "ip:10.42.20.1"
+    },
+    {
+      "type": "ip",
+      "value": "203.0.113.135",
+      "id": "ip:203.0.113.135"
+    },
+    {
+      "type": "host",
+      "value": "WKS-LROMANO",
+      "id": "host:WKS-LROMANO"
+    },
+    {
+      "type": "user",
+      "value": "lromano",
+      "id": "user:lromano"
+    },
+    {
+      "type": "ip",
+      "value": "203.0.113.157",
+      "id": "ip:203.0.113.157"
+    },
+    {
+      "type": "user",
+      "value": "gosei",
+      "id": "user:gosei"
+    },
+    {
+      "type": "user",
+      "value": "npatel",
+      "id": "user:npatel"
+    },
+    {
+      "type": "ip",
+      "value": "198.51.100.153",
+      "id": "ip:198.51.100.153"
+    },
+    {
+      "type": "host",
+      "value": "dc-01",
+      "id": "host:dc-01"
+    },
+    {
+      "type": "ip",
+      "value": "198.51.100.22",
+      "id": "ip:198.51.100.22"
+    },
+    {
+      "type": "ip",
+      "value": "203.0.113.111",
+      "id": "ip:203.0.113.111"
+    },
+    {
+      "type": "ip",
+      "value": "203.0.113.17",
+      "id": "ip:203.0.113.17"
+    },
+    {
+      "type": "ip",
+      "value": "192.0.2.40",
+      "id": "ip:192.0.2.40"
+    },
+    {
+      "type": "ip",
+      "value": "192.0.2.150",
+      "id": "ip:192.0.2.150"
+    },
+    {
+      "type": "user",
+      "value": "athompson",
+      "id": "user:athompson"
+    },
+    {
+      "type": "user",
+      "value": "svc_backup",
+      "id": "user:svc_backup"
+    },
+    {
+      "type": "ip",
+      "value": "192.0.2.19",
+      "id": "ip:192.0.2.19"
+    },
+    {
+      "type": "ip",
+      "value": "198.51.100.47",
+      "id": "ip:198.51.100.47"
+    },
+    {
+      "type": "user",
+      "value": "hlindqvist",
+      "id": "user:hlindqvist"
+    },
+    {
+      "type": "ip",
+      "value": "203.0.113.238",
+      "id": "ip:203.0.113.238"
+    },
+    {
+      "type": "host",
+      "value": "WKS-ATHOMPSON",
+      "id": "host:WKS-ATHOMPSON"
+    },
+    {
+      "type": "ip",
+      "value": "10.42.10.55",
+      "id": "ip:10.42.10.55"
+    },
+    {
+      "type": "ip",
+      "value": "203.0.113.231",
+      "id": "ip:203.0.113.231"
+    },
+    {
+      "type": "ip",
+      "value": "198.51.100.166",
+      "id": "ip:198.51.100.166"
+    },
+    {
+      "type": "ip",
+      "value": "192.0.2.90",
+      "id": "ip:192.0.2.90"
+    },
+    {
+      "type": "ip",
+      "value": "192.0.2.186",
+      "id": "ip:192.0.2.186"
+    },
+    {
+      "type": "ip",
+      "value": "198.51.100.42",
+      "id": "ip:198.51.100.42"
+    },
+    {
+      "type": "ip",
+      "value": "203.0.113.208",
+      "id": "ip:203.0.113.208"
+    },
+    {
+      "type": "ip",
+      "value": "203.0.113.147",
+      "id": "ip:203.0.113.147"
+    },
+    {
+      "type": "ip",
+      "value": "198.51.100.120",
+      "id": "ip:198.51.100.120"
+    },
+    {
+      "type": "ip",
+      "value": "192.0.2.203",
+      "id": "ip:192.0.2.203"
+    },
+    {
+      "type": "ip",
+      "value": "203.0.113.173",
+      "id": "ip:203.0.113.173"
+    },
+    {
+      "type": "ip",
+      "value": "192.0.2.68",
+      "id": "ip:192.0.2.68"
+    },
+    {
+      "type": "ip",
+      "value": "203.0.113.203",
+      "id": "ip:203.0.113.203"
+    },
+    {
+      "type": "ip",
+      "value": "203.0.113.132",
+      "id": "ip:203.0.113.132"
+    },
+    {
+      "type": "ip",
+      "value": "198.51.100.162",
+      "id": "ip:198.51.100.162"
+    },
+    {
+      "type": "ip",
+      "value": "203.0.113.123",
+      "id": "ip:203.0.113.123"
+    },
+    {
+      "type": "ip",
+      "value": "198.51.100.241",
+      "id": "ip:198.51.100.241"
+    },
+    {
+      "type": "ip",
+      "value": "192.0.2.86",
+      "id": "ip:192.0.2.86"
+    },
+    {
+      "type": "process",
+      "value": "wscript.exe",
+      "id": "process:wscript.exe"
+    },
+    {
+      "type": "ip",
+      "value": "10.42.10.219",
+      "id": "ip:10.42.10.219"
+    },
+    {
+      "type": "ip",
+      "value": "198.51.100.80",
+      "id": "ip:198.51.100.80"
+    },
+    {
+      "type": "ip",
+      "value": "198.51.100.58",
+      "id": "ip:198.51.100.58"
+    },
+    {
+      "type": "ip",
+      "value": "198.51.100.157",
+      "id": "ip:198.51.100.157"
+    },
+    {
+      "type": "ip",
+      "value": "192.0.2.118",
+      "id": "ip:192.0.2.118"
+    },
+    {
+      "type": "ip",
+      "value": "203.0.113.219",
+      "id": "ip:203.0.113.219"
+    },
+    {
+      "type": "ip",
+      "value": "203.0.113.193",
+      "id": "ip:203.0.113.193"
+    },
+    {
+      "type": "ip",
+      "value": "203.0.113.27",
+      "id": "ip:203.0.113.27"
+    },
+    {
+      "type": "ip",
+      "value": "192.0.2.38",
+      "id": "ip:192.0.2.38"
+    },
+    {
+      "type": "ip",
+      "value": "198.51.100.13",
+      "id": "ip:198.51.100.13"
+    }
+  ],
+  "edges": [
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00253",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-23T01:20:38.984580",
+      "source": "host:WKS-OFITZGERALD",
+      "target": "ip:10.42.10.31",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00078",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-23T16:36:37.330788",
+      "source": "host:WKS-OFITZGERALD",
+      "target": "ip:10.42.10.31",
+      "key": 1
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00180",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-26T02:31:01.361200",
+      "source": "host:WKS-OFITZGERALD",
+      "target": "ip:10.42.10.31",
+      "key": 2
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00183",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-26T17:11:49.961277",
+      "source": "host:WKS-OFITZGERALD",
+      "target": "ip:10.42.10.31",
+      "key": 3
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00133",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-08-06T15:11:08.905014",
+      "source": "host:WKS-OFITZGERALD",
+      "target": "ip:10.42.10.31",
+      "key": 4
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00253",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-23T01:20:38.984580",
+      "source": "host:WKS-OFITZGERALD",
+      "target": "ip:10.42.22.1",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00253",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-23T01:20:38.984580",
+      "source": "host:WKS-OFITZGERALD",
+      "target": "process:wmic.exe",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00078",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-23T16:36:37.330788",
+      "source": "host:WKS-OFITZGERALD",
+      "target": "process:git.exe",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00036",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-28T03:42:40.138850",
+      "source": "host:WKS-OFITZGERALD",
+      "target": "ip:203.0.113.45",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00133",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-08-06T15:11:08.905014",
+      "source": "host:WKS-OFITZGERALD",
+      "target": "ip:203.0.113.10",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00253",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-23T01:20:38.984580",
+      "source": "user:npetrova",
+      "target": "host:WKS-OFITZGERALD",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00008",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-23T12:34:03.152133",
+      "source": "user:npetrova",
+      "target": "host:WKS-NPETROVA",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00175",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-26T11:33:23.022912",
+      "source": "user:npetrova",
+      "target": "host:WKS-NPETROVA",
+      "key": 1
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00003",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-27T21:06:15.843422",
+      "source": "user:npetrova",
+      "target": "host:WKS-NPETROVA",
+      "key": 2
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00034",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-31T21:19:18.475870",
+      "source": "user:npetrova",
+      "target": "host:WKS-NPETROVA",
+      "key": 3
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00031",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-08-01T01:42:58.707733",
+      "source": "user:npetrova",
+      "target": "host:WKS-NPETROVA",
+      "key": 4
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00069",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-08-02T17:07:52.138860",
+      "source": "user:npetrova",
+      "target": "host:WKS-NPETROVA",
+      "key": 5
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00202",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-08-04T00:20:26.377395",
+      "source": "user:npetrova",
+      "target": "host:WKS-NPETROVA",
+      "key": 6
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00246",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-30T21:03:06.966659",
+      "source": "user:npetrova",
+      "target": "host:WKS-DKIM",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00163",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-08-05T07:32:50.091009",
+      "source": "user:npetrova",
+      "target": "host:vpn-gw-01",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00144",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-23T01:41:11.401109",
+      "source": "host:app-01",
+      "target": "ip:10.42.21.1",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00208",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-24T07:59:28.527095",
+      "source": "host:app-01",
+      "target": "ip:10.42.21.1",
+      "key": 1
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00186",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-25T13:52:55.707024",
+      "source": "host:app-01",
+      "target": "ip:10.42.21.1",
+      "key": 2
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00088",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-31T10:12:44.151438",
+      "source": "host:app-01",
+      "target": "ip:10.42.21.1",
+      "key": 3
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00198",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-08-04T23:20:10.919610",
+      "source": "host:app-01",
+      "target": "ip:10.42.21.1",
+      "key": 4
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00144",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-23T01:41:11.401109",
+      "source": "host:app-01",
+      "target": "ip:192.0.2.117",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00088",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-31T10:12:44.151438",
+      "source": "host:app-01",
+      "target": "process:bash",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00097",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-23T03:27:44.509464",
+      "source": "host:WKS-BOKAFOR",
+      "target": "ip:10.42.10.200",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00211",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-26T03:18:41.982539",
+      "source": "host:WKS-BOKAFOR",
+      "target": "ip:10.42.10.200",
+      "key": 1
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00030",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-27T00:59:51.320674",
+      "source": "host:WKS-BOKAFOR",
+      "target": "ip:10.42.10.200",
+      "key": 2
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00039",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-31T11:09:41.645842",
+      "source": "host:WKS-BOKAFOR",
+      "target": "ip:10.42.10.200",
+      "key": 3
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00099",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-08-02T13:43:49.532136",
+      "source": "host:WKS-BOKAFOR",
+      "target": "ip:10.42.10.200",
+      "key": 4
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00102",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-08-03T08:34:56.770791",
+      "source": "host:WKS-BOKAFOR",
+      "target": "ip:10.42.10.200",
+      "key": 5
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00097",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-23T03:27:44.509464",
+      "source": "host:WKS-BOKAFOR",
+      "target": "process:certutil.exe",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00211",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-26T03:18:41.982539",
+      "source": "host:WKS-BOKAFOR",
+      "target": "ip:10.42.23.1",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00211",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-26T03:18:41.982539",
+      "source": "host:WKS-BOKAFOR",
+      "target": "process:wmic.exe",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00099",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-08-02T13:43:49.532136",
+      "source": "host:WKS-BOKAFOR",
+      "target": "process:bash",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00102",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-08-03T08:34:56.770791",
+      "source": "host:WKS-BOKAFOR",
+      "target": "process:bash",
+      "key": 1
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00012",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-08-02T18:20:15.814598",
+      "source": "host:WKS-BOKAFOR",
+      "target": "ip:198.51.100.241",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00097",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-23T03:27:44.509464",
+      "source": "user:bokafor",
+      "target": "host:WKS-BOKAFOR",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00030",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-27T00:59:51.320674",
+      "source": "user:bokafor",
+      "target": "host:WKS-BOKAFOR",
+      "key": 1
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00039",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-31T11:09:41.645842",
+      "source": "user:bokafor",
+      "target": "host:WKS-BOKAFOR",
+      "key": 2
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00099",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-08-02T13:43:49.532136",
+      "source": "user:bokafor",
+      "target": "host:WKS-BOKAFOR",
+      "key": 3
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00012",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-08-02T18:20:15.814598",
+      "source": "user:bokafor",
+      "target": "host:WKS-BOKAFOR",
+      "key": 4
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00102",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-08-03T08:34:56.770791",
+      "source": "user:bokafor",
+      "target": "host:WKS-BOKAFOR",
+      "key": 5
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00186",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-25T13:52:55.707024",
+      "source": "user:bokafor",
+      "target": "host:app-01",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00218",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-30T12:38:23.174080",
+      "source": "user:bokafor",
+      "target": "host:WKS-EVASQUEZ",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00256",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-04T03:16:42.933187",
+      "source": "user:bokafor",
+      "target": "host:app-03",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00110",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-23T04:57:41.831915",
+      "source": "host:WKS-RSORENSON",
+      "target": "ip:10.42.10.88",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00131",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-31T03:43:37.469042",
+      "source": "host:WKS-RSORENSON",
+      "target": "ip:10.42.10.88",
+      "key": 1
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00234",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-01T08:22:19.554007",
+      "source": "host:WKS-RSORENSON",
+      "target": "ip:10.42.10.88",
+      "key": 2
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00033",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-08-02T08:26:42.467025",
+      "source": "host:WKS-RSORENSON",
+      "target": "ip:10.42.10.88",
+      "key": 3
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00113",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-08-02T23:08:34.346308",
+      "source": "host:WKS-RSORENSON",
+      "target": "ip:10.42.10.88",
+      "key": 4
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00110",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-23T04:57:41.831915",
+      "source": "host:WKS-RSORENSON",
+      "target": "ip:192.0.2.220",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00131",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-31T03:43:37.469042",
+      "source": "host:WKS-RSORENSON",
+      "target": "ip:192.0.2.90",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00234",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-01T08:22:19.554007",
+      "source": "host:WKS-RSORENSON",
+      "target": "ip:10.42.21.2",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00234",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-01T08:22:19.554007",
+      "source": "host:WKS-RSORENSON",
+      "target": "process:winrm",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00113",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-08-02T23:08:34.346308",
+      "source": "host:WKS-RSORENSON",
+      "target": "ip:192.0.2.86",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00132",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-23T05:13:19.531695",
+      "source": "host:WKS-ZHUSSAIN",
+      "target": "ip:10.42.10.216",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00098",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-25T07:24:36.429205",
+      "source": "host:WKS-ZHUSSAIN",
+      "target": "ip:10.42.10.216",
+      "key": 1
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00237",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-30T19:22:10.243477",
+      "source": "host:WKS-ZHUSSAIN",
+      "target": "ip:10.42.10.216",
+      "key": 2
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00132",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-23T05:13:19.531695",
+      "source": "host:WKS-ZHUSSAIN",
+      "target": "ip:198.51.100.25",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00098",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-25T07:24:36.429205",
+      "source": "host:WKS-ZHUSSAIN",
+      "target": "process:bash",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00051",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-29T00:41:27.457333",
+      "source": "host:WKS-ZHUSSAIN",
+      "target": "ip:198.51.100.153",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00237",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-30T19:22:10.243477",
+      "source": "host:WKS-ZHUSSAIN",
+      "target": "ip:10.42.27.1",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00237",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-30T19:22:10.243477",
+      "source": "host:WKS-ZHUSSAIN",
+      "target": "process:wmic.exe",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00029",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-08-01T14:32:07.920750",
+      "source": "host:WKS-ZHUSSAIN",
+      "target": "ip:203.0.113.203",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00008",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-23T12:34:03.152133",
+      "source": "host:WKS-NPETROVA",
+      "target": "ip:192.0.2.77",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00175",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-26T11:33:23.022912",
+      "source": "host:WKS-NPETROVA",
+      "target": "ip:10.42.10.186",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00069",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-08-02T17:07:52.138860",
+      "source": "host:WKS-NPETROVA",
+      "target": "ip:10.42.10.186",
+      "key": 1
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00202",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-08-04T00:20:26.377395",
+      "source": "host:WKS-NPETROVA",
+      "target": "ip:10.42.10.186",
+      "key": 2
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00210",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-04T03:30:06.548739",
+      "source": "host:WKS-NPETROVA",
+      "target": "ip:10.42.10.186",
+      "key": 3
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00238",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-05T21:03:48.934319",
+      "source": "host:WKS-NPETROVA",
+      "target": "ip:10.42.10.186",
+      "key": 4
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00003",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-27T21:06:15.843422",
+      "source": "host:WKS-NPETROVA",
+      "target": "ip:192.0.2.17",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00034",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-31T21:19:18.475870",
+      "source": "host:WKS-NPETROVA",
+      "target": "ip:203.0.113.147",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00031",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-08-01T01:42:58.707733",
+      "source": "host:WKS-NPETROVA",
+      "target": "ip:203.0.113.173",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00069",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-08-02T17:07:52.138860",
+      "source": "host:WKS-NPETROVA",
+      "target": "process:powershell.exe",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00210",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-04T03:30:06.548739",
+      "source": "host:WKS-NPETROVA",
+      "target": "ip:10.42.21.2",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00210",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-04T03:30:06.548739",
+      "source": "host:WKS-NPETROVA",
+      "target": "process:wmic.exe",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00238",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-05T21:03:48.934319",
+      "source": "host:WKS-NPETROVA",
+      "target": "process:wmic.exe",
+      "key": 1
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00238",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-05T21:03:48.934319",
+      "source": "host:WKS-NPETROVA",
+      "target": "ip:10.42.20.1",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00124",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-23T14:22:06.022823",
+      "source": "host:WKS-GALAOUI",
+      "target": "ip:10.42.10.238",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00178",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-23T16:54:20.396094",
+      "source": "host:WKS-GALAOUI",
+      "target": "ip:10.42.10.238",
+      "key": 1
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00215",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-25T07:05:25.107346",
+      "source": "host:WKS-GALAOUI",
+      "target": "ip:10.42.10.238",
+      "key": 2
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00126",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-27T10:38:59.170020",
+      "source": "host:WKS-GALAOUI",
+      "target": "ip:10.42.10.238",
+      "key": 3
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00184",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-08-02T08:59:45.953020",
+      "source": "host:WKS-GALAOUI",
+      "target": "ip:10.42.10.238",
+      "key": 4
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00124",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-23T14:22:06.022823",
+      "source": "host:WKS-GALAOUI",
+      "target": "ip:203.0.113.15",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00215",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-25T07:05:25.107346",
+      "source": "host:WKS-GALAOUI",
+      "target": "ip:10.42.26.1",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00215",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-25T07:05:25.107346",
+      "source": "host:WKS-GALAOUI",
+      "target": "process:wmic.exe",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00126",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-27T10:38:59.170020",
+      "source": "host:WKS-GALAOUI",
+      "target": "ip:203.0.113.159",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00052",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-08-01T02:20:21.965878",
+      "source": "host:WKS-GALAOUI",
+      "target": "ip:192.0.2.68",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00078",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-23T16:36:37.330788",
+      "source": "user:ofitzgerald",
+      "target": "host:WKS-OFITZGERALD",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00180",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-26T02:31:01.361200",
+      "source": "user:ofitzgerald",
+      "target": "host:WKS-OFITZGERALD",
+      "key": 1
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00183",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-26T17:11:49.961277",
+      "source": "user:ofitzgerald",
+      "target": "host:WKS-OFITZGERALD",
+      "key": 2
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00036",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-28T03:42:40.138850",
+      "source": "user:ofitzgerald",
+      "target": "host:WKS-OFITZGERALD",
+      "key": 3
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00252",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-28T05:08:19.429154",
+      "source": "user:ofitzgerald",
+      "target": "host:WKS-SALVAREZ",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00237",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-30T19:22:10.243477",
+      "source": "user:ofitzgerald",
+      "target": "host:WKS-ZHUSSAIN",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00236",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-02T02:14:24.409031",
+      "source": "user:ofitzgerald",
+      "target": "host:WKS-RFONTAINE",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00178",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-23T16:54:20.396094",
+      "source": "user:galaoui",
+      "target": "host:WKS-GALAOUI",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00052",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-08-01T02:20:21.965878",
+      "source": "user:galaoui",
+      "target": "host:WKS-GALAOUI",
+      "key": 1
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00184",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-08-02T08:59:45.953020",
+      "source": "user:galaoui",
+      "target": "host:WKS-GALAOUI",
+      "key": 2
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00229",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-24T14:50:33.078667",
+      "source": "user:galaoui",
+      "target": "host:WKS-RFONTAINE",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00225",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-02T04:17:12.438226",
+      "source": "user:galaoui",
+      "target": "host:WKS-TANDERSSON",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00093",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-23T20:27:06.603592",
+      "source": "host:WKS-LCHEN",
+      "target": "ip:10.42.10.19",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00242",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-25T17:54:41.953383",
+      "source": "host:WKS-LCHEN",
+      "target": "ip:10.42.10.19",
+      "key": 1
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00093",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-23T20:27:06.603592",
+      "source": "host:WKS-LCHEN",
+      "target": "process:certutil.exe",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00242",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-25T17:54:41.953383",
+      "source": "host:WKS-LCHEN",
+      "target": "ip:10.42.21.3",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00242",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-25T17:54:41.953383",
+      "source": "host:WKS-LCHEN",
+      "target": "process:winrm",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00015",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-31T09:19:39.940490",
+      "source": "host:WKS-LCHEN",
+      "target": "ip:198.51.100.42",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00019",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-08-06T20:40:16.134479",
+      "source": "host:WKS-LCHEN",
+      "target": "ip:198.51.100.13",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00093",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-23T20:27:06.603592",
+      "source": "user:lchen",
+      "target": "host:WKS-LCHEN",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00015",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-31T09:19:39.940490",
+      "source": "user:lchen",
+      "target": "host:WKS-LCHEN",
+      "key": 1
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00019",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-08-06T20:40:16.134479",
+      "source": "user:lchen",
+      "target": "host:WKS-LCHEN",
+      "key": 2
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00157",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-24T22:26:03.825711",
+      "source": "user:lchen",
+      "target": "host:app-02",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00179",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-25T19:59:44.463409",
+      "source": "user:lchen",
+      "target": "host:app-03",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00212",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-03T22:53:25.979361",
+      "source": "user:lchen",
+      "target": "host:backup-01",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00005",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-23T22:54:15.127188",
+      "source": "host:WKS-TNOVAK",
+      "target": "ip:192.0.2.14",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00167",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-24T10:19:32.949556",
+      "source": "host:WKS-TNOVAK",
+      "target": "ip:10.42.10.125",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00089",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-26T19:51:24.648667",
+      "source": "host:WKS-TNOVAK",
+      "target": "ip:10.42.10.125",
+      "key": 1
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00074",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-27T12:43:14.249730",
+      "source": "host:WKS-TNOVAK",
+      "target": "ip:10.42.10.125",
+      "key": 2
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00172",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-28T11:40:50.647132",
+      "source": "host:WKS-TNOVAK",
+      "target": "ip:10.42.10.125",
+      "key": 3
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00134",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-31T20:27:01.707630",
+      "source": "host:WKS-TNOVAK",
+      "target": "ip:10.42.10.125",
+      "key": 4
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00089",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-26T19:51:24.648667",
+      "source": "host:WKS-TNOVAK",
+      "target": "process:schtasks.exe",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00074",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-27T12:43:14.249730",
+      "source": "host:WKS-TNOVAK",
+      "target": "process:docker.exe",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00134",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-31T20:27:01.707630",
+      "source": "host:WKS-TNOVAK",
+      "target": "ip:203.0.113.208",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00005",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-23T22:54:15.127188",
+      "source": "user:tnovak",
+      "target": "host:WKS-TNOVAK",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00167",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-24T10:19:32.949556",
+      "source": "user:tnovak",
+      "target": "host:WKS-TNOVAK",
+      "key": 1
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00089",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-26T19:51:24.648667",
+      "source": "user:tnovak",
+      "target": "host:WKS-TNOVAK",
+      "key": 2
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00074",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-27T12:43:14.249730",
+      "source": "user:tnovak",
+      "target": "host:WKS-TNOVAK",
+      "key": 3
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00172",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-28T11:40:50.647132",
+      "source": "user:tnovak",
+      "target": "host:WKS-TNOVAK",
+      "key": 4
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00016",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-24T01:56:08.894698",
+      "source": "host:WKS-IDUBOIS",
+      "target": "ip:203.0.113.211",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00111",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-24T16:05:42.550518",
+      "source": "host:WKS-IDUBOIS",
+      "target": "ip:10.42.10.232",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00174",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-26T10:24:36.804206",
+      "source": "host:WKS-IDUBOIS",
+      "target": "ip:10.42.10.232",
+      "key": 1
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00245",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-27T04:04:19.290621",
+      "source": "host:WKS-IDUBOIS",
+      "target": "ip:10.42.10.232",
+      "key": 2
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00222",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-27T13:03:59.451454",
+      "source": "host:WKS-IDUBOIS",
+      "target": "ip:10.42.10.232",
+      "key": 3
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00077",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-31T14:56:27.878624",
+      "source": "host:WKS-IDUBOIS",
+      "target": "ip:10.42.10.232",
+      "key": 4
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00148",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-08-02T11:50:21.748982",
+      "source": "host:WKS-IDUBOIS",
+      "target": "ip:10.42.10.232",
+      "key": 5
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00105",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-08-04T10:47:43.064011",
+      "source": "host:WKS-IDUBOIS",
+      "target": "ip:10.42.10.232",
+      "key": 6
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00081",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-08-05T03:07:49.874658",
+      "source": "host:WKS-IDUBOIS",
+      "target": "ip:10.42.10.232",
+      "key": 7
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00111",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-24T16:05:42.550518",
+      "source": "host:WKS-IDUBOIS",
+      "target": "ip:203.0.113.10",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00148",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-08-02T11:50:21.748982",
+      "source": "host:WKS-IDUBOIS",
+      "target": "ip:203.0.113.10",
+      "key": 1
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00024",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-26T04:42:55.294260",
+      "source": "host:WKS-IDUBOIS",
+      "target": "ip:192.0.2.47",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00245",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-27T04:04:19.290621",
+      "source": "host:WKS-IDUBOIS",
+      "target": "ip:10.42.21.1",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00245",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-27T04:04:19.290621",
+      "source": "host:WKS-IDUBOIS",
+      "target": "process:winrm",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00222",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-27T13:03:59.451454",
+      "source": "host:WKS-IDUBOIS",
+      "target": "ip:10.42.20.2",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00222",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-27T13:03:59.451454",
+      "source": "host:WKS-IDUBOIS",
+      "target": "process:mstsc.exe",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00077",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-31T14:56:27.878624",
+      "source": "host:WKS-IDUBOIS",
+      "target": "process:curl.exe",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00081",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-08-05T03:07:49.874658",
+      "source": "host:WKS-IDUBOIS",
+      "target": "process:curl.exe",
+      "key": 1
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00105",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-08-04T10:47:43.064011",
+      "source": "host:WKS-IDUBOIS",
+      "target": "ip:192.0.2.40",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00016",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-24T01:56:08.894698",
+      "source": "user:idubois",
+      "target": "host:WKS-IDUBOIS",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00024",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-26T04:42:55.294260",
+      "source": "user:idubois",
+      "target": "host:WKS-IDUBOIS",
+      "key": 1
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00174",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-26T10:24:36.804206",
+      "source": "user:idubois",
+      "target": "host:WKS-IDUBOIS",
+      "key": 2
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00077",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-31T14:56:27.878624",
+      "source": "user:idubois",
+      "target": "host:WKS-IDUBOIS",
+      "key": 3
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00081",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-08-05T03:07:49.874658",
+      "source": "user:idubois",
+      "target": "host:WKS-IDUBOIS",
+      "key": 4
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00254",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-28T23:50:15.182003",
+      "source": "user:idubois",
+      "target": "host:WKS-JWHITFIELD",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00079",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-24T02:37:27.355724",
+      "source": "host:WKS-IMACDONALD",
+      "target": "ip:10.42.10.133",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00087",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-25T12:42:31.124015",
+      "source": "host:WKS-IMACDONALD",
+      "target": "ip:10.42.10.133",
+      "key": 1
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00103",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-26T20:21:51.517907",
+      "source": "host:WKS-IMACDONALD",
+      "target": "ip:10.42.10.133",
+      "key": 2
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00127",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-27T10:21:22.564342",
+      "source": "host:WKS-IMACDONALD",
+      "target": "ip:10.42.10.133",
+      "key": 3
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00171",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-28T10:38:45.109724",
+      "source": "host:WKS-IMACDONALD",
+      "target": "ip:10.42.10.133",
+      "key": 4
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00021",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-29T08:08:02.428374",
+      "source": "host:WKS-IMACDONALD",
+      "target": "ip:10.42.10.133",
+      "key": 5
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00188",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-30T21:43:25.947935",
+      "source": "host:WKS-IMACDONALD",
+      "target": "ip:10.42.10.133",
+      "key": 6
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00053",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-08-05T00:34:03.220852",
+      "source": "host:WKS-IMACDONALD",
+      "target": "ip:10.42.10.133",
+      "key": 7
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00079",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-24T02:37:27.355724",
+      "source": "host:WKS-IMACDONALD",
+      "target": "process:regsvr32.exe",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00043",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-25T05:48:15.757126",
+      "source": "host:WKS-IMACDONALD",
+      "target": "ip:192.0.2.192",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00087",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-25T12:42:31.124015",
+      "source": "host:WKS-IMACDONALD",
+      "target": "process:schtasks.exe",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00103",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-26T20:21:51.517907",
+      "source": "host:WKS-IMACDONALD",
+      "target": "process:schtasks.exe",
+      "key": 1
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00053",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-08-05T00:34:03.220852",
+      "source": "host:WKS-IMACDONALD",
+      "target": "process:schtasks.exe",
+      "key": 2
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00127",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-27T10:21:22.564342",
+      "source": "host:WKS-IMACDONALD",
+      "target": "ip:192.0.2.15",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00049",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-30T03:31:01.623955",
+      "source": "host:WKS-IMACDONALD",
+      "target": "ip:203.0.113.231",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00023",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-08-04T22:55:10.281953",
+      "source": "host:WKS-IMACDONALD",
+      "target": "ip:203.0.113.193",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00079",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-24T02:37:27.355724",
+      "source": "user:imacdonald",
+      "target": "host:WKS-IMACDONALD",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00043",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-25T05:48:15.757126",
+      "source": "user:imacdonald",
+      "target": "host:WKS-IMACDONALD",
+      "key": 1
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00087",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-25T12:42:31.124015",
+      "source": "user:imacdonald",
+      "target": "host:WKS-IMACDONALD",
+      "key": 2
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00103",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-26T20:21:51.517907",
+      "source": "user:imacdonald",
+      "target": "host:WKS-IMACDONALD",
+      "key": 3
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00171",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-28T10:38:45.109724",
+      "source": "user:imacdonald",
+      "target": "host:WKS-IMACDONALD",
+      "key": 4
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00021",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-29T08:08:02.428374",
+      "source": "user:imacdonald",
+      "target": "host:WKS-IMACDONALD",
+      "key": 5
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00049",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-30T03:31:01.623955",
+      "source": "user:imacdonald",
+      "target": "host:WKS-IMACDONALD",
+      "key": 6
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00188",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-30T21:43:25.947935",
+      "source": "user:imacdonald",
+      "target": "host:WKS-IMACDONALD",
+      "key": 7
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00023",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-08-04T22:55:10.281953",
+      "source": "user:imacdonald",
+      "target": "host:WKS-IMACDONALD",
+      "key": 8
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00053",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-08-05T00:34:03.220852",
+      "source": "user:imacdonald",
+      "target": "host:WKS-IMACDONALD",
+      "key": 9
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00232",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-25T02:48:37.693411",
+      "source": "user:imacdonald",
+      "target": "host:WKS-DKIM",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00214",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-30T03:11:00.055839",
+      "source": "user:imacdonald",
+      "target": "host:WKS-ATHOMPSON",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00208",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-24T07:59:28.527095",
+      "source": "user:dkim",
+      "target": "host:app-01",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00220",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-25T11:43:13.725455",
+      "source": "user:dkim",
+      "target": "host:WKS-HLINDQVIST",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00050",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-26T15:53:29.044381",
+      "source": "user:dkim",
+      "target": "host:WKS-DKIM",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00013",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-08-02T10:48:59.532275",
+      "source": "user:dkim",
+      "target": "host:WKS-DKIM",
+      "key": 1
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00007",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-08-02T15:46:50.532666",
+      "source": "user:dkim",
+      "target": "host:WKS-DKIM",
+      "key": 2
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00066",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-08-03T15:17:46.039046",
+      "source": "user:dkim",
+      "target": "host:WKS-DKIM",
+      "key": 3
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00057",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-08-04T15:54:43.180933",
+      "source": "user:dkim",
+      "target": "host:WKS-DKIM",
+      "key": 4
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00164",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-08-02T00:50:04.644211",
+      "source": "user:dkim",
+      "target": "host:web-01",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00196",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-08-04T07:23:50.762622",
+      "source": "user:dkim",
+      "target": "host:vpn-gw-01",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00072",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-24T09:13:16.893686",
+      "source": "host:vpn-gw-01",
+      "target": "ip:10.42.24.1",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00223",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-28T05:57:24.562430",
+      "source": "host:vpn-gw-01",
+      "target": "ip:10.42.24.1",
+      "key": 1
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00058",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-28T06:41:21.786305",
+      "source": "host:vpn-gw-01",
+      "target": "ip:10.42.24.1",
+      "key": 2
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00204",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-30T10:11:29.837667",
+      "source": "host:vpn-gw-01",
+      "target": "ip:10.42.24.1",
+      "key": 3
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00196",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-08-04T07:23:50.762622",
+      "source": "host:vpn-gw-01",
+      "target": "ip:10.42.24.1",
+      "key": 4
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00221",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-05T05:51:19.589784",
+      "source": "host:vpn-gw-01",
+      "target": "ip:10.42.24.1",
+      "key": 5
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00163",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-08-05T07:32:50.091009",
+      "source": "host:vpn-gw-01",
+      "target": "ip:10.42.24.1",
+      "key": 6
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00128",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-08-05T08:24:26.906577",
+      "source": "host:vpn-gw-01",
+      "target": "ip:10.42.24.1",
+      "key": 7
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00072",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-24T09:13:16.893686",
+      "source": "host:vpn-gw-01",
+      "target": "process:certutil.exe",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00223",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-28T05:57:24.562430",
+      "source": "host:vpn-gw-01",
+      "target": "ip:10.42.27.1",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00223",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-28T05:57:24.562430",
+      "source": "host:vpn-gw-01",
+      "target": "process:psexec.exe",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00221",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-05T05:51:19.589784",
+      "source": "host:vpn-gw-01",
+      "target": "process:psexec.exe",
+      "key": 1
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00058",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-28T06:41:21.786305",
+      "source": "host:vpn-gw-01",
+      "target": "process:bash",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00221",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-05T05:51:19.589784",
+      "source": "host:vpn-gw-01",
+      "target": "ip:10.42.25.1",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00128",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-08-05T08:24:26.906577",
+      "source": "host:vpn-gw-01",
+      "target": "ip:192.0.2.38",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00072",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-24T09:13:16.893686",
+      "source": "user:svc_ci",
+      "target": "host:vpn-gw-01",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00060",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-27T03:54:15.691177",
+      "source": "user:svc_ci",
+      "target": "host:backup-01",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00083",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-24T11:44:31.028483",
+      "source": "host:WKS-SALVAREZ",
+      "target": "ip:10.42.10.95",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00219",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-25T01:28:33.833253",
+      "source": "host:WKS-SALVAREZ",
+      "target": "ip:10.42.10.95",
+      "key": 1
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00252",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-28T05:08:19.429154",
+      "source": "host:WKS-SALVAREZ",
+      "target": "ip:10.42.10.95",
+      "key": 2
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00217",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-30T02:43:32.218957",
+      "source": "host:WKS-SALVAREZ",
+      "target": "ip:10.42.10.95",
+      "key": 3
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00216",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-31T09:21:19.712823",
+      "source": "host:WKS-SALVAREZ",
+      "target": "ip:10.42.10.95",
+      "key": 4
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00226",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-31T14:55:03.886266",
+      "source": "host:WKS-SALVAREZ",
+      "target": "ip:10.42.10.95",
+      "key": 5
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00002",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-08-01T11:55:46.663453",
+      "source": "host:WKS-SALVAREZ",
+      "target": "ip:10.42.10.95",
+      "key": 6
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00068",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-08-04T00:18:30.982446",
+      "source": "host:WKS-SALVAREZ",
+      "target": "ip:10.42.10.95",
+      "key": 7
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00258",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-04T15:36:41.958528",
+      "source": "host:WKS-SALVAREZ",
+      "target": "ip:10.42.10.95",
+      "key": 8
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00191",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-08-05T19:55:39.839038",
+      "source": "host:WKS-SALVAREZ",
+      "target": "ip:10.42.10.95",
+      "key": 9
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00083",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-24T11:44:31.028483",
+      "source": "host:WKS-SALVAREZ",
+      "target": "process:robocopy.exe",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00219",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-25T01:28:33.833253",
+      "source": "host:WKS-SALVAREZ",
+      "target": "ip:10.42.26.1",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00258",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-04T15:36:41.958528",
+      "source": "host:WKS-SALVAREZ",
+      "target": "ip:10.42.26.1",
+      "key": 1
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00219",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-25T01:28:33.833253",
+      "source": "host:WKS-SALVAREZ",
+      "target": "process:psexec.exe",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00217",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-30T02:43:32.218957",
+      "source": "host:WKS-SALVAREZ",
+      "target": "process:psexec.exe",
+      "key": 1
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00252",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-28T05:08:19.429154",
+      "source": "host:WKS-SALVAREZ",
+      "target": "ip:10.42.27.1",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00252",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-28T05:08:19.429154",
+      "source": "host:WKS-SALVAREZ",
+      "target": "process:winrm",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00226",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-31T14:55:03.886266",
+      "source": "host:WKS-SALVAREZ",
+      "target": "process:winrm",
+      "key": 1
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00011",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-29T15:26:42.631886",
+      "source": "host:WKS-SALVAREZ",
+      "target": "ip:192.0.2.150",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00217",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-30T02:43:32.218957",
+      "source": "host:WKS-SALVAREZ",
+      "target": "ip:10.42.20.1",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00216",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-31T09:21:19.712823",
+      "source": "host:WKS-SALVAREZ",
+      "target": "ip:10.42.20.1",
+      "key": 1
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00216",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-31T09:21:19.712823",
+      "source": "host:WKS-SALVAREZ",
+      "target": "process:mstsc.exe",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00258",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-04T15:36:41.958528",
+      "source": "host:WKS-SALVAREZ",
+      "target": "process:mstsc.exe",
+      "key": 1
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00226",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-31T14:55:03.886266",
+      "source": "host:WKS-SALVAREZ",
+      "target": "ip:10.42.21.2",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00068",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-08-04T00:18:30.982446",
+      "source": "host:WKS-SALVAREZ",
+      "target": "process:cmd.exe",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00083",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-24T11:44:31.028483",
+      "source": "user:salvarez",
+      "target": "host:WKS-SALVAREZ",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00011",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-29T15:26:42.631886",
+      "source": "user:salvarez",
+      "target": "host:WKS-SALVAREZ",
+      "key": 1
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00002",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-08-01T11:55:46.663453",
+      "source": "user:salvarez",
+      "target": "host:WKS-SALVAREZ",
+      "key": 2
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00068",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-08-04T00:18:30.982446",
+      "source": "user:salvarez",
+      "target": "host:WKS-SALVAREZ",
+      "key": 3
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00191",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-08-05T19:55:39.839038",
+      "source": "user:salvarez",
+      "target": "host:WKS-SALVAREZ",
+      "key": 4
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00169",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-26T22:24:21.999403",
+      "source": "user:salvarez",
+      "target": "host:db-02",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00200",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-29T09:41:50.128543",
+      "source": "user:salvarez",
+      "target": "host:fileserver-01",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00210",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-04T03:30:06.548739",
+      "source": "user:salvarez",
+      "target": "host:WKS-NPETROVA",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00238",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-05T21:03:48.934319",
+      "source": "user:salvarez",
+      "target": "host:WKS-NPETROVA",
+      "key": 1
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00229",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-24T14:50:33.078667",
+      "source": "host:WKS-RFONTAINE",
+      "target": "ip:10.42.10.132",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00154",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-26T20:32:33.127530",
+      "source": "host:WKS-RFONTAINE",
+      "target": "ip:10.42.10.132",
+      "key": 1
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00201",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-28T15:53:24.068311",
+      "source": "host:WKS-RFONTAINE",
+      "target": "ip:10.42.10.132",
+      "key": 2
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00123",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-29T10:21:42.835918",
+      "source": "host:WKS-RFONTAINE",
+      "target": "ip:10.42.10.132",
+      "key": 3
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00009",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-29T12:54:33.781742",
+      "source": "host:WKS-RFONTAINE",
+      "target": "ip:10.42.10.132",
+      "key": 4
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00122",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-30T01:05:05.565591",
+      "source": "host:WKS-RFONTAINE",
+      "target": "ip:10.42.10.132",
+      "key": 5
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00106",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-30T14:35:20.580490",
+      "source": "host:WKS-RFONTAINE",
+      "target": "ip:10.42.10.132",
+      "key": 6
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00236",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-02T02:14:24.409031",
+      "source": "host:WKS-RFONTAINE",
+      "target": "ip:10.42.10.132",
+      "key": 7
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00229",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-24T14:50:33.078667",
+      "source": "host:WKS-RFONTAINE",
+      "target": "ip:10.42.23.1",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00229",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-24T14:50:33.078667",
+      "source": "host:WKS-RFONTAINE",
+      "target": "process:wmic.exe",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00154",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-26T20:32:33.127530",
+      "source": "host:WKS-RFONTAINE",
+      "target": "ip:203.0.113.254",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00020",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-29T01:56:44.056368",
+      "source": "host:WKS-RFONTAINE",
+      "target": "ip:203.0.113.111",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00123",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-29T10:21:42.835918",
+      "source": "host:WKS-RFONTAINE",
+      "target": "ip:203.0.113.17",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00122",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-30T01:05:05.565591",
+      "source": "host:WKS-RFONTAINE",
+      "target": "ip:203.0.113.238",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00106",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-30T14:35:20.580490",
+      "source": "host:WKS-RFONTAINE",
+      "target": "ip:198.51.100.20",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00025",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-08-01T00:30:14.532347",
+      "source": "host:WKS-RFONTAINE",
+      "target": "ip:192.0.2.203",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00236",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-02T02:14:24.409031",
+      "source": "host:WKS-RFONTAINE",
+      "target": "ip:10.42.25.1",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00236",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-02T02:14:24.409031",
+      "source": "host:WKS-RFONTAINE",
+      "target": "process:mstsc.exe",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00001",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-08-02T06:26:12.535598",
+      "source": "host:WKS-RFONTAINE",
+      "target": "ip:203.0.113.123",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00092",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-24T16:56:48.748764",
+      "source": "host:WKS-MNGUYEN",
+      "target": "ip:10.42.10.207",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00247",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-29T04:11:43.567900",
+      "source": "host:WKS-MNGUYEN",
+      "target": "ip:10.42.10.207",
+      "key": 1
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00063",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-30T15:44:30.236452",
+      "source": "host:WKS-MNGUYEN",
+      "target": "ip:10.42.10.207",
+      "key": 2
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00092",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-24T16:56:48.748764",
+      "source": "host:WKS-MNGUYEN",
+      "target": "process:curl.exe",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00006",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-25T22:10:24.883381",
+      "source": "host:WKS-MNGUYEN",
+      "target": "ip:198.51.100.56",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00247",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-29T04:11:43.567900",
+      "source": "host:WKS-MNGUYEN",
+      "target": "ip:10.42.23.1",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00247",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-29T04:11:43.567900",
+      "source": "host:WKS-MNGUYEN",
+      "target": "process:mstsc.exe",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00063",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-30T15:44:30.236452",
+      "source": "host:WKS-MNGUYEN",
+      "target": "process:bash",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00092",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-24T16:56:48.748764",
+      "source": "user:mnguyen",
+      "target": "host:WKS-MNGUYEN",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00006",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-25T22:10:24.883381",
+      "source": "user:mnguyen",
+      "target": "host:WKS-MNGUYEN",
+      "key": 1
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00063",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-30T15:44:30.236452",
+      "source": "user:mnguyen",
+      "target": "host:WKS-MNGUYEN",
+      "key": 2
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00250",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-25T00:26:24.492776",
+      "source": "user:mnguyen",
+      "target": "host:WKS-VHALE",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00166",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-30T02:08:04.694811",
+      "source": "user:mnguyen",
+      "target": "host:dc-01",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00157",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-24T22:26:03.825711",
+      "source": "host:app-02",
+      "target": "ip:10.42.21.2",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00080",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-25T03:44:31.049013",
+      "source": "host:app-02",
+      "target": "ip:10.42.21.2",
+      "key": 1
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00059",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-27T05:46:33.464573",
+      "source": "host:app-02",
+      "target": "ip:10.42.21.2",
+      "key": 2
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00140",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-27T22:41:40.944630",
+      "source": "host:app-02",
+      "target": "ip:10.42.21.2",
+      "key": 3
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00227",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-03T22:36:20.228865",
+      "source": "host:app-02",
+      "target": "ip:10.42.21.2",
+      "key": 4
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00243",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-05T16:41:50.866217",
+      "source": "host:app-02",
+      "target": "ip:10.42.21.2",
+      "key": 5
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00080",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-25T03:44:31.049013",
+      "source": "host:app-02",
+      "target": "process:mimikatz.exe",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00059",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-27T05:46:33.464573",
+      "source": "host:app-02",
+      "target": "process:rundll32.exe",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00140",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-27T22:41:40.944630",
+      "source": "host:app-02",
+      "target": "ip:203.0.113.196",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00227",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-03T22:36:20.228865",
+      "source": "host:app-02",
+      "target": "ip:10.42.21.1",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00227",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-03T22:36:20.228865",
+      "source": "host:app-02",
+      "target": "process:mstsc.exe",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00243",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-05T16:41:50.866217",
+      "source": "host:app-02",
+      "target": "ip:10.42.27.1",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00243",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-05T16:41:50.866217",
+      "source": "host:app-02",
+      "target": "process:psexec.exe",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00203",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-24T22:47:46.859004",
+      "source": "host:WKS-TANDERSSON",
+      "target": "ip:10.42.10.76",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00018",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-28T09:31:16.764933",
+      "source": "host:WKS-TANDERSSON",
+      "target": "ip:10.42.10.76",
+      "key": 1
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00062",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-29T22:35:00.902399",
+      "source": "host:WKS-TANDERSSON",
+      "target": "ip:10.42.10.76",
+      "key": 2
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00189",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-30T04:09:20.765955",
+      "source": "host:WKS-TANDERSSON",
+      "target": "ip:10.42.10.76",
+      "key": 3
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00046",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-31T13:26:03.802451",
+      "source": "host:WKS-TANDERSSON",
+      "target": "ip:10.42.10.76",
+      "key": 4
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00225",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-02T04:17:12.438226",
+      "source": "host:WKS-TANDERSSON",
+      "target": "ip:10.42.10.76",
+      "key": 5
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00062",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-29T22:35:00.902399",
+      "source": "host:WKS-TANDERSSON",
+      "target": "process:schtasks.exe",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00225",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-02T04:17:12.438226",
+      "source": "host:WKS-TANDERSSON",
+      "target": "ip:10.42.22.2",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00225",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-02T04:17:12.438226",
+      "source": "host:WKS-TANDERSSON",
+      "target": "process:winrm",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00203",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-24T22:47:46.859004",
+      "source": "user:tandersson",
+      "target": "host:WKS-TANDERSSON",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00018",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-28T09:31:16.764933",
+      "source": "user:tandersson",
+      "target": "host:WKS-TANDERSSON",
+      "key": 1
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00062",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-29T22:35:00.902399",
+      "source": "user:tandersson",
+      "target": "host:WKS-TANDERSSON",
+      "key": 2
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00189",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-30T04:09:20.765955",
+      "source": "user:tandersson",
+      "target": "host:WKS-TANDERSSON",
+      "key": 3
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00046",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-31T13:26:03.802451",
+      "source": "user:tandersson",
+      "target": "host:WKS-TANDERSSON",
+      "key": 4
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00250",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-25T00:26:24.492776",
+      "source": "host:WKS-VHALE",
+      "target": "ip:10.42.10.94",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00109",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-25T15:17:02.846445",
+      "source": "host:WKS-VHALE",
+      "target": "ip:10.42.10.94",
+      "key": 1
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00257",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-30T22:44:26.346992",
+      "source": "host:WKS-VHALE",
+      "target": "ip:10.42.10.94",
+      "key": 2
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00071",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-31T05:55:37.703271",
+      "source": "host:WKS-VHALE",
+      "target": "ip:10.42.10.94",
+      "key": 3
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00121",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-31T15:20:27.969123",
+      "source": "host:WKS-VHALE",
+      "target": "ip:10.42.10.94",
+      "key": 4
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00192",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-08-03T02:32:29.671160",
+      "source": "host:WKS-VHALE",
+      "target": "ip:10.42.10.94",
+      "key": 5
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00250",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-25T00:26:24.492776",
+      "source": "host:WKS-VHALE",
+      "target": "ip:10.42.25.1",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00250",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-25T00:26:24.492776",
+      "source": "host:WKS-VHALE",
+      "target": "process:wmic.exe",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00109",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-25T15:17:02.846445",
+      "source": "host:WKS-VHALE",
+      "target": "ip:203.0.113.41",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00047",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-27T21:48:36.395532",
+      "source": "host:WKS-VHALE",
+      "target": "ip:203.0.113.244",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00257",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-30T22:44:26.346992",
+      "source": "host:WKS-VHALE",
+      "target": "ip:10.42.23.1",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00257",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-30T22:44:26.346992",
+      "source": "host:WKS-VHALE",
+      "target": "process:psexec.exe",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00071",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-31T05:55:37.703271",
+      "source": "host:WKS-VHALE",
+      "target": "process:regsvr32.exe",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00121",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-31T15:20:27.969123",
+      "source": "host:WKS-VHALE",
+      "target": "ip:198.51.100.25",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00155",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-25T00:30:55.877496",
+      "source": "host:WKS-MWEBB",
+      "target": "ip:10.42.10.136",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00129",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-26T13:05:56.634088",
+      "source": "host:WKS-MWEBB",
+      "target": "ip:10.42.10.136",
+      "key": 1
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00037",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-27T09:12:09.356894",
+      "source": "host:WKS-MWEBB",
+      "target": "ip:10.42.10.136",
+      "key": 2
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00076",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-29T03:07:29.153144",
+      "source": "host:WKS-MWEBB",
+      "target": "ip:10.42.10.136",
+      "key": 3
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00224",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-29T15:14:53.064168",
+      "source": "host:WKS-MWEBB",
+      "target": "ip:10.42.10.136",
+      "key": 4
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00155",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-25T00:30:55.877496",
+      "source": "host:WKS-MWEBB",
+      "target": "ip:203.0.113.37",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00129",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-26T13:05:56.634088",
+      "source": "host:WKS-MWEBB",
+      "target": "ip:192.0.2.15",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00042",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-27T06:53:58.216441",
+      "source": "host:WKS-MWEBB",
+      "target": "ip:203.0.113.210",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00076",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-29T03:07:29.153144",
+      "source": "host:WKS-MWEBB",
+      "target": "process:curl.exe",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00224",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-29T15:14:53.064168",
+      "source": "host:WKS-MWEBB",
+      "target": "ip:10.42.20.2",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00224",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-29T15:14:53.064168",
+      "source": "host:WKS-MWEBB",
+      "target": "process:mstsc.exe",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00028",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-29T23:02:06.658070",
+      "source": "host:WKS-MWEBB",
+      "target": "ip:198.51.100.47",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00032",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-08-04T22:32:19.218172",
+      "source": "host:WKS-MWEBB",
+      "target": "ip:203.0.113.219",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00219",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-25T01:28:33.833253",
+      "source": "user:rsorenson",
+      "target": "host:WKS-SALVAREZ",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00245",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-27T04:04:19.290621",
+      "source": "user:rsorenson",
+      "target": "host:WKS-IDUBOIS",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00222",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-27T13:03:59.451454",
+      "source": "user:rsorenson",
+      "target": "host:WKS-IDUBOIS",
+      "key": 1
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00244",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-27T09:34:36.991906",
+      "source": "user:rsorenson",
+      "target": "host:WKS-HLINDQVIST",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00234",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-01T08:22:19.554007",
+      "source": "user:rsorenson",
+      "target": "host:WKS-RSORENSON",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00033",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-08-02T08:26:42.467025",
+      "source": "user:rsorenson",
+      "target": "host:WKS-RSORENSON",
+      "key": 1
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00227",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-03T22:36:20.228865",
+      "source": "user:rsorenson",
+      "target": "host:app-02",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00233",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-06T23:47:07.348946",
+      "source": "user:rsorenson",
+      "target": "host:WKS-PRAMANATHAN",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00232",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-25T02:48:37.693411",
+      "source": "host:WKS-DKIM",
+      "target": "ip:10.42.10.39",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00050",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-26T15:53:29.044381",
+      "source": "host:WKS-DKIM",
+      "target": "ip:10.42.10.39",
+      "key": 1
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00231",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-28T18:54:23.601968",
+      "source": "host:WKS-DKIM",
+      "target": "ip:10.42.10.39",
+      "key": 2
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00246",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-30T21:03:06.966659",
+      "source": "host:WKS-DKIM",
+      "target": "ip:10.42.10.39",
+      "key": 3
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00251",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-02T08:10:27.138168",
+      "source": "host:WKS-DKIM",
+      "target": "ip:10.42.10.39",
+      "key": 4
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00013",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-08-02T10:48:59.532275",
+      "source": "host:WKS-DKIM",
+      "target": "ip:10.42.10.39",
+      "key": 5
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00007",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-08-02T15:46:50.532666",
+      "source": "host:WKS-DKIM",
+      "target": "ip:10.42.10.39",
+      "key": 6
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00066",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-08-03T15:17:46.039046",
+      "source": "host:WKS-DKIM",
+      "target": "ip:10.42.10.39",
+      "key": 7
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00150",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-08-04T10:50:06.318806",
+      "source": "host:WKS-DKIM",
+      "target": "ip:10.42.10.39",
+      "key": 8
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00057",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-08-04T15:54:43.180933",
+      "source": "host:WKS-DKIM",
+      "target": "ip:10.42.10.39",
+      "key": 9
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00232",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-25T02:48:37.693411",
+      "source": "host:WKS-DKIM",
+      "target": "ip:10.42.26.1",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00232",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-25T02:48:37.693411",
+      "source": "host:WKS-DKIM",
+      "target": "process:winrm",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00246",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-30T21:03:06.966659",
+      "source": "host:WKS-DKIM",
+      "target": "process:winrm",
+      "key": 1
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00231",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-28T18:54:23.601968",
+      "source": "host:WKS-DKIM",
+      "target": "ip:10.42.21.2",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00231",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-28T18:54:23.601968",
+      "source": "host:WKS-DKIM",
+      "target": "process:wmic.exe",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00246",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-30T21:03:06.966659",
+      "source": "host:WKS-DKIM",
+      "target": "ip:10.42.27.1",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00251",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-02T08:10:27.138168",
+      "source": "host:WKS-DKIM",
+      "target": "ip:10.42.21.1",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00251",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-02T08:10:27.138168",
+      "source": "host:WKS-DKIM",
+      "target": "process:psexec.exe",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00066",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-08-03T15:17:46.039046",
+      "source": "host:WKS-DKIM",
+      "target": "process:robocopy.exe",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00150",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-08-04T10:50:06.318806",
+      "source": "host:WKS-DKIM",
+      "target": "ip:198.51.100.20",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00057",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-08-04T15:54:43.180933",
+      "source": "host:WKS-DKIM",
+      "target": "process:git.exe",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00080",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-25T03:44:31.049013",
+      "source": "user:jwhitfield",
+      "target": "host:app-02",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00059",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-27T05:46:33.464573",
+      "source": "user:jwhitfield",
+      "target": "host:app-02",
+      "key": 1
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00101",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-26T00:23:46.758541",
+      "source": "user:jwhitfield",
+      "target": "host:WKS-JWHITFIELD",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00017",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-26T08:18:38.779057",
+      "source": "user:jwhitfield",
+      "target": "host:WKS-JWHITFIELD",
+      "key": 1
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00055",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-30T03:23:10.893637",
+      "source": "user:jwhitfield",
+      "target": "host:WKS-JWHITFIELD",
+      "key": 2
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00027",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-30T18:53:34.894881",
+      "source": "user:jwhitfield",
+      "target": "host:WKS-JWHITFIELD",
+      "key": 3
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00044",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-08-02T01:18:15.928209",
+      "source": "user:jwhitfield",
+      "target": "host:WKS-JWHITFIELD",
+      "key": 4
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00045",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-08-05T08:24:44.265297",
+      "source": "user:jwhitfield",
+      "target": "host:WKS-JWHITFIELD",
+      "key": 5
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00058",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-28T06:41:21.786305",
+      "source": "user:jwhitfield",
+      "target": "host:vpn-gw-01",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00231",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-28T18:54:23.601968",
+      "source": "user:jwhitfield",
+      "target": "host:WKS-DKIM",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00224",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-29T15:14:53.064168",
+      "source": "user:jwhitfield",
+      "target": "host:WKS-MWEBB",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00257",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-30T22:44:26.346992",
+      "source": "user:jwhitfield",
+      "target": "host:WKS-VHALE",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00064",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-31T09:42:37.394751",
+      "source": "user:jwhitfield",
+      "target": "host:web-01",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00249",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-03T11:35:32.898645",
+      "source": "user:jwhitfield",
+      "target": "host:WKS-EVASQUEZ",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00091",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-08-04T05:16:21.669774",
+      "source": "user:jwhitfield",
+      "target": "host:web-02",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00195",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-08-05T10:23:35.661342",
+      "source": "user:jwhitfield",
+      "target": "host:db-02",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00125",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-25T04:48:17.312860",
+      "source": "host:WKS-PRAMANATHAN",
+      "target": "ip:10.42.10.54",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00086",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-25T09:50:54.020115",
+      "source": "host:WKS-PRAMANATHAN",
+      "target": "ip:10.42.10.54",
+      "key": 1
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00090",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-25T22:28:06.500957",
+      "source": "host:WKS-PRAMANATHAN",
+      "target": "ip:10.42.10.54",
+      "key": 2
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00104",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-27T04:54:51.223829",
+      "source": "host:WKS-PRAMANATHAN",
+      "target": "ip:10.42.10.54",
+      "key": 3
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00194",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-28T05:34:00.059378",
+      "source": "host:WKS-PRAMANATHAN",
+      "target": "ip:10.42.10.54",
+      "key": 4
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00095",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-29T16:10:11.416306",
+      "source": "host:WKS-PRAMANATHAN",
+      "target": "ip:10.42.10.54",
+      "key": 5
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00193",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-30T20:13:37.377526",
+      "source": "host:WKS-PRAMANATHAN",
+      "target": "ip:10.42.10.54",
+      "key": 6
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00085",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-31T06:30:15.881185",
+      "source": "host:WKS-PRAMANATHAN",
+      "target": "ip:10.42.10.54",
+      "key": 7
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00206",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-08-02T03:13:44.421841",
+      "source": "host:WKS-PRAMANATHAN",
+      "target": "ip:10.42.10.54",
+      "key": 8
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00233",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-06T23:47:07.348946",
+      "source": "host:WKS-PRAMANATHAN",
+      "target": "ip:10.42.10.54",
+      "key": 9
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00125",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-25T04:48:17.312860",
+      "source": "host:WKS-PRAMANATHAN",
+      "target": "ip:192.0.2.218",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00086",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-25T09:50:54.020115",
+      "source": "host:WKS-PRAMANATHAN",
+      "target": "process:robocopy.exe",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00090",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-25T22:28:06.500957",
+      "source": "host:WKS-PRAMANATHAN",
+      "target": "process:powershell.exe",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00104",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-27T04:54:51.223829",
+      "source": "host:WKS-PRAMANATHAN",
+      "target": "process:powershell.exe",
+      "key": 1
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00095",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-29T16:10:11.416306",
+      "source": "host:WKS-PRAMANATHAN",
+      "target": "process:bash",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00085",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-31T06:30:15.881185",
+      "source": "host:WKS-PRAMANATHAN",
+      "target": "process:cmd.exe",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00233",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-06T23:47:07.348946",
+      "source": "host:WKS-PRAMANATHAN",
+      "target": "ip:10.42.21.3",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00233",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-06T23:47:07.348946",
+      "source": "host:WKS-PRAMANATHAN",
+      "target": "process:wmic.exe",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00215",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-25T07:05:25.107346",
+      "source": "user:evasquez",
+      "target": "host:WKS-GALAOUI",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00205",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-26T03:30:12.899574",
+      "source": "user:evasquez",
+      "target": "host:backup-01",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00022",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-27T18:22:49.133820",
+      "source": "user:evasquez",
+      "target": "host:WKS-EVASQUEZ",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00181",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-08-04T22:04:19.720538",
+      "source": "user:evasquez",
+      "target": "host:WKS-EVASQUEZ",
+      "key": 1
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00223",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-28T05:57:24.562430",
+      "source": "user:evasquez",
+      "target": "host:vpn-gw-01",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00098",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-25T07:24:36.429205",
+      "source": "user:zhussain",
+      "target": "host:WKS-ZHUSSAIN",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00051",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-29T00:41:27.457333",
+      "source": "user:zhussain",
+      "target": "host:WKS-ZHUSSAIN",
+      "key": 1
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00029",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-08-01T14:32:07.920750",
+      "source": "user:zhussain",
+      "target": "host:WKS-ZHUSSAIN",
+      "key": 2
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00086",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-25T09:50:54.020115",
+      "source": "user:pramanathan",
+      "target": "host:WKS-PRAMANATHAN",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00090",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-25T22:28:06.500957",
+      "source": "user:pramanathan",
+      "target": "host:WKS-PRAMANATHAN",
+      "key": 1
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00104",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-27T04:54:51.223829",
+      "source": "user:pramanathan",
+      "target": "host:WKS-PRAMANATHAN",
+      "key": 2
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00194",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-28T05:34:00.059378",
+      "source": "user:pramanathan",
+      "target": "host:WKS-PRAMANATHAN",
+      "key": 3
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00095",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-29T16:10:11.416306",
+      "source": "user:pramanathan",
+      "target": "host:WKS-PRAMANATHAN",
+      "key": 4
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00193",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-30T20:13:37.377526",
+      "source": "user:pramanathan",
+      "target": "host:WKS-PRAMANATHAN",
+      "key": 5
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00085",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-31T06:30:15.881185",
+      "source": "user:pramanathan",
+      "target": "host:WKS-PRAMANATHAN",
+      "key": 6
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00206",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-08-02T03:13:44.421841",
+      "source": "user:pramanathan",
+      "target": "host:WKS-PRAMANATHAN",
+      "key": 7
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00084",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-29T01:53:58.695609",
+      "source": "user:pramanathan",
+      "target": "host:dc-01",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00235",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-01T02:20:26.818719",
+      "source": "user:pramanathan",
+      "target": "host:db-02",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00185",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-08-04T10:34:05.011014",
+      "source": "user:pramanathan",
+      "target": "host:app-03",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00221",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-05T05:51:19.589784",
+      "source": "user:pramanathan",
+      "target": "host:vpn-gw-01",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00239",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-05T17:59:39.536163",
+      "source": "user:pramanathan",
+      "target": "host:web-01",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00117",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-25T11:06:31.682185",
+      "source": "host:WKS-NPATEL",
+      "target": "ip:10.42.10.123",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00038",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-28T15:29:26.002186",
+      "source": "host:WKS-NPATEL",
+      "target": "ip:10.42.10.123",
+      "key": 1
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00209",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-02T10:17:08.859471",
+      "source": "host:WKS-NPATEL",
+      "target": "ip:10.42.10.123",
+      "key": 2
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00117",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-25T11:06:31.682185",
+      "source": "host:WKS-NPATEL",
+      "target": "ip:198.51.100.25",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00010",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-29T18:15:25.535238",
+      "source": "host:WKS-NPATEL",
+      "target": "ip:192.0.2.19",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00209",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-02T10:17:08.859471",
+      "source": "host:WKS-NPATEL",
+      "target": "ip:10.42.21.2",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00209",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-02T10:17:08.859471",
+      "source": "host:WKS-NPATEL",
+      "target": "process:wmic.exe",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00041",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-08-04T05:33:35.017918",
+      "source": "host:WKS-NPATEL",
+      "target": "ip:192.0.2.118",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00220",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-25T11:43:13.725455",
+      "source": "host:WKS-HLINDQVIST",
+      "target": "ip:10.42.10.159",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00244",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-27T09:34:36.991906",
+      "source": "host:WKS-HLINDQVIST",
+      "target": "ip:10.42.10.159",
+      "key": 1
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00197",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-30T00:08:45.767841",
+      "source": "host:WKS-HLINDQVIST",
+      "target": "ip:10.42.10.159",
+      "key": 2
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00177",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-08-02T22:31:12.208736",
+      "source": "host:WKS-HLINDQVIST",
+      "target": "ip:10.42.10.159",
+      "key": 3
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00255",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-03T20:01:46.043629",
+      "source": "host:WKS-HLINDQVIST",
+      "target": "ip:10.42.10.159",
+      "key": 4
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00220",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-25T11:43:13.725455",
+      "source": "host:WKS-HLINDQVIST",
+      "target": "ip:10.42.24.1",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00220",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-25T11:43:13.725455",
+      "source": "host:WKS-HLINDQVIST",
+      "target": "process:winrm",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00255",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-03T20:01:46.043629",
+      "source": "host:WKS-HLINDQVIST",
+      "target": "process:winrm",
+      "key": 1
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00244",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-27T09:34:36.991906",
+      "source": "host:WKS-HLINDQVIST",
+      "target": "ip:10.42.23.1",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00244",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-27T09:34:36.991906",
+      "source": "host:WKS-HLINDQVIST",
+      "target": "process:mstsc.exe",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00255",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-03T20:01:46.043629",
+      "source": "host:WKS-HLINDQVIST",
+      "target": "ip:10.42.21.2",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00151",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-25T14:38:24.302332",
+      "source": "host:db-01",
+      "target": "ip:10.42.22.1",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00156",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-26T03:57:32.882079",
+      "source": "host:db-01",
+      "target": "ip:10.42.22.1",
+      "key": 1
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00065",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-27T03:16:14.661932",
+      "source": "host:db-01",
+      "target": "ip:10.42.22.1",
+      "key": 2
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00149",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-30T01:19:11.326823",
+      "source": "host:db-01",
+      "target": "ip:10.42.22.1",
+      "key": 3
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00190",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-08-04T04:35:06.263082",
+      "source": "host:db-01",
+      "target": "ip:10.42.22.1",
+      "key": 4
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00151",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-25T14:38:24.302332",
+      "source": "host:db-01",
+      "target": "ip:192.0.2.15",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00156",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-26T03:57:32.882079",
+      "source": "host:db-01",
+      "target": "ip:198.51.100.23",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00065",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-27T03:16:14.661932",
+      "source": "host:db-01",
+      "target": "process:cmd.exe",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00149",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-30T01:19:11.326823",
+      "source": "host:db-01",
+      "target": "ip:198.51.100.25",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00242",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-25T17:54:41.953383",
+      "source": "user:cbennett",
+      "target": "host:WKS-LCHEN",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00207",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-26T03:07:36.681380",
+      "source": "user:cbennett",
+      "target": "host:WKS-CBENNETT",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00061",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-08-01T00:54:20.537726",
+      "source": "user:cbennett",
+      "target": "host:WKS-CBENNETT",
+      "key": 1
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00170",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-08-02T01:27:05.646358",
+      "source": "user:cbennett",
+      "target": "host:WKS-CBENNETT",
+      "key": 2
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00048",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-08-02T11:57:53.135690",
+      "source": "user:cbennett",
+      "target": "host:WKS-CBENNETT",
+      "key": 3
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00168",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-08-03T04:49:03.290184",
+      "source": "user:cbennett",
+      "target": "host:WKS-CBENNETT",
+      "key": 4
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00073",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-08-04T11:44:38.148360",
+      "source": "user:cbennett",
+      "target": "host:WKS-CBENNETT",
+      "key": 5
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00248",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-27T14:47:24.313580",
+      "source": "user:cbennett",
+      "target": "host:app-03",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00228",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-30T04:17:03.724761",
+      "source": "user:cbennett",
+      "target": "host:WKS-GOSEI",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00198",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-08-04T23:20:10.919610",
+      "source": "user:cbennett",
+      "target": "host:app-01",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00182",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-08-05T23:41:04.137663",
+      "source": "user:cbennett",
+      "target": "host:db-02",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00179",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-25T19:59:44.463409",
+      "source": "host:app-03",
+      "target": "ip:10.42.21.3",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00187",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-26T05:40:01.392492",
+      "source": "host:app-03",
+      "target": "ip:10.42.21.3",
+      "key": 1
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00248",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-27T14:47:24.313580",
+      "source": "host:app-03",
+      "target": "ip:10.42.21.3",
+      "key": 2
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00116",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-27T22:42:33.870631",
+      "source": "host:app-03",
+      "target": "ip:10.42.21.3",
+      "key": 3
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00142",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-31T05:53:18.990468",
+      "source": "host:app-03",
+      "target": "ip:10.42.21.3",
+      "key": 4
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00138",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-08-01T23:41:52.760596",
+      "source": "host:app-03",
+      "target": "ip:10.42.21.3",
+      "key": 5
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00256",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-04T03:16:42.933187",
+      "source": "host:app-03",
+      "target": "ip:10.42.21.3",
+      "key": 6
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00185",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-08-04T10:34:05.011014",
+      "source": "host:app-03",
+      "target": "ip:10.42.21.3",
+      "key": 7
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00248",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-27T14:47:24.313580",
+      "source": "host:app-03",
+      "target": "ip:10.42.20.2",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00248",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-27T14:47:24.313580",
+      "source": "host:app-03",
+      "target": "process:psexec.exe",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00116",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-27T22:42:33.870631",
+      "source": "host:app-03",
+      "target": "ip:198.51.100.130",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00142",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-31T05:53:18.990468",
+      "source": "host:app-03",
+      "target": "ip:198.51.100.25",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00138",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-08-01T23:41:52.760596",
+      "source": "host:app-03",
+      "target": "ip:203.0.113.132",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00256",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-04T03:16:42.933187",
+      "source": "host:app-03",
+      "target": "ip:10.42.23.1",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00256",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-04T03:16:42.933187",
+      "source": "host:app-03",
+      "target": "process:winrm",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00137",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-25T20:14:21.666170",
+      "source": "host:WKS-CBENNETT",
+      "target": "ip:10.42.10.150",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00207",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-26T03:07:36.681380",
+      "source": "host:WKS-CBENNETT",
+      "target": "ip:10.42.10.150",
+      "key": 1
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00061",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-08-01T00:54:20.537726",
+      "source": "host:WKS-CBENNETT",
+      "target": "ip:10.42.10.150",
+      "key": 2
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00170",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-08-02T01:27:05.646358",
+      "source": "host:WKS-CBENNETT",
+      "target": "ip:10.42.10.150",
+      "key": 3
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00048",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-08-02T11:57:53.135690",
+      "source": "host:WKS-CBENNETT",
+      "target": "ip:10.42.10.150",
+      "key": 4
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00168",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-08-03T04:49:03.290184",
+      "source": "host:WKS-CBENNETT",
+      "target": "ip:10.42.10.150",
+      "key": 5
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00073",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-08-04T11:44:38.148360",
+      "source": "host:WKS-CBENNETT",
+      "target": "ip:10.42.10.150",
+      "key": 6
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00137",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-25T20:14:21.666170",
+      "source": "host:WKS-CBENNETT",
+      "target": "ip:198.51.100.136",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00061",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-08-01T00:54:20.537726",
+      "source": "host:WKS-CBENNETT",
+      "target": "process:curl.exe",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00073",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-08-04T11:44:38.148360",
+      "source": "host:WKS-CBENNETT",
+      "target": "process:certutil.exe",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00101",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-26T00:23:46.758541",
+      "source": "host:WKS-JWHITFIELD",
+      "target": "ip:10.42.10.241",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00017",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-26T08:18:38.779057",
+      "source": "host:WKS-JWHITFIELD",
+      "target": "ip:10.42.10.241",
+      "key": 1
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00254",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-28T23:50:15.182003",
+      "source": "host:WKS-JWHITFIELD",
+      "target": "ip:10.42.10.241",
+      "key": 2
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00055",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-30T03:23:10.893637",
+      "source": "host:WKS-JWHITFIELD",
+      "target": "ip:10.42.10.241",
+      "key": 3
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00045",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-08-05T08:24:44.265297",
+      "source": "host:WKS-JWHITFIELD",
+      "target": "ip:10.42.10.241",
+      "key": 4
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00101",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-26T00:23:46.758541",
+      "source": "host:WKS-JWHITFIELD",
+      "target": "process:cmd.exe",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00254",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-28T23:50:15.182003",
+      "source": "host:WKS-JWHITFIELD",
+      "target": "ip:10.42.21.3",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00254",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-28T23:50:15.182003",
+      "source": "host:WKS-JWHITFIELD",
+      "target": "process:winrm",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00055",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-30T03:23:10.893637",
+      "source": "host:WKS-JWHITFIELD",
+      "target": "process:powershell.exe",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00027",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-30T18:53:34.894881",
+      "source": "host:WKS-JWHITFIELD",
+      "target": "ip:198.51.100.166",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00044",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-08-02T01:18:15.928209",
+      "source": "host:WKS-JWHITFIELD",
+      "target": "ip:198.51.100.162",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00211",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-26T03:18:41.982539",
+      "source": "user:vhale",
+      "target": "host:WKS-BOKAFOR",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00047",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-27T21:48:36.395532",
+      "source": "user:vhale",
+      "target": "host:WKS-VHALE",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00071",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-31T05:55:37.703271",
+      "source": "user:vhale",
+      "target": "host:WKS-VHALE",
+      "key": 1
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00192",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-08-03T02:32:29.671160",
+      "source": "user:vhale",
+      "target": "host:WKS-VHALE",
+      "key": 2
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00240",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-29T03:32:52.190703",
+      "source": "user:vhale",
+      "target": "host:web-01",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00205",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-26T03:30:12.899574",
+      "source": "host:backup-01",
+      "target": "ip:10.42.27.1",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00060",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-27T03:54:15.691177",
+      "source": "host:backup-01",
+      "target": "ip:10.42.27.1",
+      "key": 1
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00152",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-31T04:43:46.249145",
+      "source": "host:backup-01",
+      "target": "ip:10.42.27.1",
+      "key": 2
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00143",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-31T21:41:12.112064",
+      "source": "host:backup-01",
+      "target": "ip:10.42.27.1",
+      "key": 3
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00130",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-08-02T14:31:38.400446",
+      "source": "host:backup-01",
+      "target": "ip:10.42.27.1",
+      "key": 4
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00230",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-02T19:51:29.227825",
+      "source": "host:backup-01",
+      "target": "ip:10.42.27.1",
+      "key": 5
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00153",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-08-03T09:51:50.038532",
+      "source": "host:backup-01",
+      "target": "ip:10.42.27.1",
+      "key": 6
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00096",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-08-03T14:29:16.857781",
+      "source": "host:backup-01",
+      "target": "ip:10.42.27.1",
+      "key": 7
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00212",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-03T22:53:25.979361",
+      "source": "host:backup-01",
+      "target": "ip:10.42.27.1",
+      "key": 8
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00060",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-27T03:54:15.691177",
+      "source": "host:backup-01",
+      "target": "process:schtasks.exe",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00152",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-31T04:43:46.249145",
+      "source": "host:backup-01",
+      "target": "ip:192.0.2.186",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00143",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-31T21:41:12.112064",
+      "source": "host:backup-01",
+      "target": "ip:198.51.100.120",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00130",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-08-02T14:31:38.400446",
+      "source": "host:backup-01",
+      "target": "ip:203.0.113.10",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00230",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-02T19:51:29.227825",
+      "source": "host:backup-01",
+      "target": "ip:10.42.24.1",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00230",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-02T19:51:29.227825",
+      "source": "host:backup-01",
+      "target": "process:winrm",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00153",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-08-03T09:51:50.038532",
+      "source": "host:backup-01",
+      "target": "ip:198.51.100.25",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00096",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-08-03T14:29:16.857781",
+      "source": "host:backup-01",
+      "target": "process:robocopy.exe",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00212",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-03T22:53:25.979361",
+      "source": "host:backup-01",
+      "target": "ip:10.42.22.2",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00212",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-03T22:53:25.979361",
+      "source": "host:backup-01",
+      "target": "process:mstsc.exe",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00187",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-26T05:40:01.392492",
+      "source": "user:sdelacroix",
+      "target": "host:app-03",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00173",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-27T23:09:54.928787",
+      "source": "user:sdelacroix",
+      "target": "host:WKS-SDELACROIX",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00176",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-08-06T02:33:24.222891",
+      "source": "user:sdelacroix",
+      "target": "host:WKS-SDELACROIX",
+      "key": 1
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00216",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-31T09:21:19.712823",
+      "source": "user:sdelacroix",
+      "target": "host:WKS-SALVAREZ",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00115",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-26T13:47:04.838308",
+      "source": "host:WKS-EVASQUEZ",
+      "target": "ip:10.42.10.203",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00218",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-30T12:38:23.174080",
+      "source": "host:WKS-EVASQUEZ",
+      "target": "ip:10.42.10.203",
+      "key": 1
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00249",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-03T11:35:32.898645",
+      "source": "host:WKS-EVASQUEZ",
+      "target": "ip:10.42.10.203",
+      "key": 2
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00114",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-08-04T10:50:15.813522",
+      "source": "host:WKS-EVASQUEZ",
+      "target": "ip:10.42.10.203",
+      "key": 3
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00181",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-08-04T22:04:19.720538",
+      "source": "host:WKS-EVASQUEZ",
+      "target": "ip:10.42.10.203",
+      "key": 4
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00115",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-26T13:47:04.838308",
+      "source": "host:WKS-EVASQUEZ",
+      "target": "ip:198.51.100.20",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00022",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-27T18:22:49.133820",
+      "source": "host:WKS-EVASQUEZ",
+      "target": "ip:198.51.100.55",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00218",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-30T12:38:23.174080",
+      "source": "host:WKS-EVASQUEZ",
+      "target": "ip:10.42.25.1",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00218",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-30T12:38:23.174080",
+      "source": "host:WKS-EVASQUEZ",
+      "target": "process:winrm",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00249",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-03T11:35:32.898645",
+      "source": "host:WKS-EVASQUEZ",
+      "target": "ip:10.42.21.3",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00249",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-03T11:35:32.898645",
+      "source": "host:WKS-EVASQUEZ",
+      "target": "process:mstsc.exe",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00114",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-08-04T10:50:15.813522",
+      "source": "host:WKS-EVASQUEZ",
+      "target": "ip:203.0.113.10",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00120",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-26T19:13:27.681665",
+      "source": "host:WKS-GOSEI",
+      "target": "ip:10.42.10.142",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00161",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-28T14:04:07.984764",
+      "source": "host:WKS-GOSEI",
+      "target": "ip:10.42.10.142",
+      "key": 1
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00056",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-29T22:36:43.947557",
+      "source": "host:WKS-GOSEI",
+      "target": "ip:10.42.10.142",
+      "key": 2
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00228",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-30T04:17:03.724761",
+      "source": "host:WKS-GOSEI",
+      "target": "ip:10.42.10.142",
+      "key": 3
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00213",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-02T23:34:33.225317",
+      "source": "host:WKS-GOSEI",
+      "target": "ip:10.42.10.142",
+      "key": 4
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00108",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-08-04T12:42:47.766685",
+      "source": "host:WKS-GOSEI",
+      "target": "ip:10.42.10.142",
+      "key": 5
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00158",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-08-05T18:53:45.344929",
+      "source": "host:WKS-GOSEI",
+      "target": "ip:10.42.10.142",
+      "key": 6
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00120",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-26T19:13:27.681665",
+      "source": "host:WKS-GOSEI",
+      "target": "ip:203.0.113.226",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00056",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-29T22:36:43.947557",
+      "source": "host:WKS-GOSEI",
+      "target": "process:powershell.exe",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00228",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-30T04:17:03.724761",
+      "source": "host:WKS-GOSEI",
+      "target": "ip:10.42.21.1",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00228",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-30T04:17:03.724761",
+      "source": "host:WKS-GOSEI",
+      "target": "process:wmic.exe",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00213",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-02T23:34:33.225317",
+      "source": "host:WKS-GOSEI",
+      "target": "ip:10.42.25.1",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00213",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-02T23:34:33.225317",
+      "source": "host:WKS-GOSEI",
+      "target": "process:winrm",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00108",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-08-04T12:42:47.766685",
+      "source": "host:WKS-GOSEI",
+      "target": "ip:192.0.2.40",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00169",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-26T22:24:21.999403",
+      "source": "host:db-02",
+      "target": "ip:10.42.22.2",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00241",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-28T09:22:17.093019",
+      "source": "host:db-02",
+      "target": "ip:10.42.22.2",
+      "key": 1
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00235",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-01T02:20:26.818719",
+      "source": "host:db-02",
+      "target": "ip:10.42.22.2",
+      "key": 2
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00260",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-04T23:09:22.528805",
+      "source": "host:db-02",
+      "target": "ip:10.42.22.2",
+      "key": 3
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00195",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-08-05T10:23:35.661342",
+      "source": "host:db-02",
+      "target": "ip:10.42.22.2",
+      "key": 4
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00182",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-08-05T23:41:04.137663",
+      "source": "host:db-02",
+      "target": "ip:10.42.22.2",
+      "key": 5
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00241",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-28T09:22:17.093019",
+      "source": "host:db-02",
+      "target": "ip:10.42.25.1",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00241",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-28T09:22:17.093019",
+      "source": "host:db-02",
+      "target": "process:winrm",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00235",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-01T02:20:26.818719",
+      "source": "host:db-02",
+      "target": "ip:10.42.24.1",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00235",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-01T02:20:26.818719",
+      "source": "host:db-02",
+      "target": "process:wmic.exe",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00260",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-04T23:09:22.528805",
+      "source": "host:db-02",
+      "target": "process:wmic.exe",
+      "key": 1
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00260",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-04T23:09:22.528805",
+      "source": "host:db-02",
+      "target": "ip:10.42.21.3",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00070",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-26T23:05:15.544538",
+      "source": "host:WKS-EKOWALSKI",
+      "target": "ip:10.42.10.115",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00107",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-28T01:02:02.965774",
+      "source": "host:WKS-EKOWALSKI",
+      "target": "ip:10.42.10.115",
+      "key": 1
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00135",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-29T19:26:18.746000",
+      "source": "host:WKS-EKOWALSKI",
+      "target": "ip:10.42.10.115",
+      "key": 2
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00159",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-30T21:48:45.512985",
+      "source": "host:WKS-EKOWALSKI",
+      "target": "ip:10.42.10.115",
+      "key": 3
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00118",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-08-04T01:39:40.404481",
+      "source": "host:WKS-EKOWALSKI",
+      "target": "ip:10.42.10.115",
+      "key": 4
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00054",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-08-05T03:53:01.113354",
+      "source": "host:WKS-EKOWALSKI",
+      "target": "ip:10.42.10.115",
+      "key": 5
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00070",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-26T23:05:15.544538",
+      "source": "host:WKS-EKOWALSKI",
+      "target": "process:cmd.exe",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00107",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-28T01:02:02.965774",
+      "source": "host:WKS-EKOWALSKI",
+      "target": "ip:198.51.100.234",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00135",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-29T19:26:18.746000",
+      "source": "host:WKS-EKOWALSKI",
+      "target": "ip:203.0.113.111",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00118",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-08-04T01:39:40.404481",
+      "source": "host:WKS-EKOWALSKI",
+      "target": "ip:198.51.100.157",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00054",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-08-05T03:53:01.113354",
+      "source": "host:WKS-EKOWALSKI",
+      "target": "process:curl.exe",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00070",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-26T23:05:15.544538",
+      "source": "user:ekowalski",
+      "target": "host:WKS-EKOWALSKI",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00159",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-30T21:48:45.512985",
+      "source": "user:ekowalski",
+      "target": "host:WKS-EKOWALSKI",
+      "key": 1
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00054",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-08-05T03:53:01.113354",
+      "source": "user:ekowalski",
+      "target": "host:WKS-EKOWALSKI",
+      "key": 2
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00204",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-30T10:11:29.837667",
+      "source": "user:ekowalski",
+      "target": "host:vpn-gw-01",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00165",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-27T03:02:22.823171",
+      "source": "host:web-02",
+      "target": "ip:10.42.20.2",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00091",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-08-04T05:16:21.669774",
+      "source": "host:web-02",
+      "target": "ip:10.42.20.2",
+      "key": 1
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00091",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-08-04T05:16:21.669774",
+      "source": "host:web-02",
+      "target": "process:schtasks.exe",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00165",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-27T03:02:22.823171",
+      "source": "user:rfontaine",
+      "target": "host:web-02",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00199",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-27T10:52:01.330136",
+      "source": "user:rfontaine",
+      "target": "host:fileserver-01",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00201",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-28T15:53:24.068311",
+      "source": "user:rfontaine",
+      "target": "host:WKS-RFONTAINE",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00020",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-29T01:56:44.056368",
+      "source": "user:rfontaine",
+      "target": "host:WKS-RFONTAINE",
+      "key": 1
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00009",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-29T12:54:33.781742",
+      "source": "user:rfontaine",
+      "target": "host:WKS-RFONTAINE",
+      "key": 2
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00025",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-08-01T00:30:14.532347",
+      "source": "user:rfontaine",
+      "target": "host:WKS-RFONTAINE",
+      "key": 3
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00001",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-08-02T06:26:12.535598",
+      "source": "user:rfontaine",
+      "target": "host:WKS-RFONTAINE",
+      "key": 4
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00217",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-30T02:43:32.218957",
+      "source": "user:rfontaine",
+      "target": "host:WKS-SALVAREZ",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00190",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-08-04T04:35:06.263082",
+      "source": "user:rfontaine",
+      "target": "host:db-01",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00065",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-27T03:16:14.661932",
+      "source": "user:mwebb",
+      "target": "host:db-01",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00042",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-27T06:53:58.216441",
+      "source": "user:mwebb",
+      "target": "host:WKS-MWEBB",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00037",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-27T09:12:09.356894",
+      "source": "user:mwebb",
+      "target": "host:WKS-MWEBB",
+      "key": 1
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00076",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-29T03:07:29.153144",
+      "source": "user:mwebb",
+      "target": "host:WKS-MWEBB",
+      "key": 2
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00028",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-29T23:02:06.658070",
+      "source": "user:mwebb",
+      "target": "host:WKS-MWEBB",
+      "key": 3
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00032",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-08-04T22:32:19.218172",
+      "source": "user:mwebb",
+      "target": "host:WKS-MWEBB",
+      "key": 4
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00088",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-31T10:12:44.151438",
+      "source": "user:mwebb",
+      "target": "host:app-01",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00067",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-08-01T03:45:34.258757",
+      "source": "user:mwebb",
+      "target": "host:dc-01",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00251",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-02T08:10:27.138168",
+      "source": "user:mwebb",
+      "target": "host:WKS-DKIM",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00209",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-02T10:17:08.859471",
+      "source": "user:mwebb",
+      "target": "host:WKS-NPATEL",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00260",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-04T23:09:22.528805",
+      "source": "user:mwebb",
+      "target": "host:db-02",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00243",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-05T16:41:50.866217",
+      "source": "user:mwebb",
+      "target": "host:app-02",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00199",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-27T10:52:01.330136",
+      "source": "host:fileserver-01",
+      "target": "ip:10.42.25.1",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00200",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-29T09:41:50.128543",
+      "source": "host:fileserver-01",
+      "target": "ip:10.42.25.1",
+      "key": 1
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00075",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-29T17:58:17.346712",
+      "source": "host:fileserver-01",
+      "target": "ip:10.42.25.1",
+      "key": 2
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00162",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-08-02T00:22:15.403587",
+      "source": "host:fileserver-01",
+      "target": "ip:10.42.25.1",
+      "key": 3
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00075",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-29T17:58:17.346712",
+      "source": "host:fileserver-01",
+      "target": "process:powershell.exe",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00173",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-27T23:09:54.928787",
+      "source": "host:WKS-SDELACROIX",
+      "target": "ip:10.42.10.165",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00119",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-29T12:38:27.449443",
+      "source": "host:WKS-SDELACROIX",
+      "target": "ip:10.42.10.165",
+      "key": 1
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00141",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-30T14:50:17.057366",
+      "source": "host:WKS-SDELACROIX",
+      "target": "ip:10.42.10.165",
+      "key": 2
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00136",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-30T15:23:05.787469",
+      "source": "host:WKS-SDELACROIX",
+      "target": "ip:10.42.10.165",
+      "key": 3
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00176",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-08-06T02:33:24.222891",
+      "source": "host:WKS-SDELACROIX",
+      "target": "ip:10.42.10.165",
+      "key": 4
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00119",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-29T12:38:27.449443",
+      "source": "host:WKS-SDELACROIX",
+      "target": "ip:192.0.2.40",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00136",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-30T15:23:05.787469",
+      "source": "host:WKS-SDELACROIX",
+      "target": "ip:192.0.2.40",
+      "key": 1
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00141",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-30T14:50:17.057366",
+      "source": "host:WKS-SDELACROIX",
+      "target": "ip:203.0.113.10",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00145",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-28T04:58:18.380512",
+      "source": "host:web-01",
+      "target": "ip:10.42.20.1",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00240",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-29T03:32:52.190703",
+      "source": "host:web-01",
+      "target": "ip:10.42.20.1",
+      "key": 1
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00160",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-29T15:33:27.384711",
+      "source": "host:web-01",
+      "target": "ip:10.42.20.1",
+      "key": 2
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00064",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-31T09:42:37.394751",
+      "source": "host:web-01",
+      "target": "ip:10.42.20.1",
+      "key": 3
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00259",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-31T11:49:43.264100",
+      "source": "host:web-01",
+      "target": "ip:10.42.20.1",
+      "key": 4
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00164",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-08-02T00:50:04.644211",
+      "source": "host:web-01",
+      "target": "ip:10.42.20.1",
+      "key": 5
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00239",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-05T17:59:39.536163",
+      "source": "host:web-01",
+      "target": "ip:10.42.20.1",
+      "key": 6
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00145",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-28T04:58:18.380512",
+      "source": "host:web-01",
+      "target": "ip:203.0.113.135",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00240",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-29T03:32:52.190703",
+      "source": "host:web-01",
+      "target": "ip:10.42.20.2",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00240",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-29T03:32:52.190703",
+      "source": "host:web-01",
+      "target": "process:wmic.exe",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00064",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-31T09:42:37.394751",
+      "source": "host:web-01",
+      "target": "process:git.exe",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00259",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-31T11:49:43.264100",
+      "source": "host:web-01",
+      "target": "ip:10.42.21.1",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00259",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-31T11:49:43.264100",
+      "source": "host:web-01",
+      "target": "process:mstsc.exe",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00239",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-05T17:59:39.536163",
+      "source": "host:web-01",
+      "target": "ip:10.42.21.3",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00239",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-05T17:59:39.536163",
+      "source": "host:web-01",
+      "target": "process:psexec.exe",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00035",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-28T05:28:43.077569",
+      "source": "host:WKS-LROMANO",
+      "target": "ip:203.0.113.157",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00139",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-08-03T08:48:41.582454",
+      "source": "host:WKS-LROMANO",
+      "target": "ip:10.42.10.219",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00004",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-08-04T08:29:15.493434",
+      "source": "host:WKS-LROMANO",
+      "target": "ip:10.42.10.219",
+      "key": 1
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00094",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-08-05T21:18:22.324288",
+      "source": "host:WKS-LROMANO",
+      "target": "ip:10.42.10.219",
+      "key": 2
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00139",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-08-03T08:48:41.582454",
+      "source": "host:WKS-LROMANO",
+      "target": "ip:198.51.100.20",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00026",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-08-03T18:25:21.677300",
+      "source": "host:WKS-LROMANO",
+      "target": "ip:198.51.100.80",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00094",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-08-05T21:18:22.324288",
+      "source": "host:WKS-LROMANO",
+      "target": "process:cmd.exe",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00035",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-28T05:28:43.077569",
+      "source": "user:lromano",
+      "target": "host:WKS-LROMANO",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00026",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-08-03T18:25:21.677300",
+      "source": "user:lromano",
+      "target": "host:WKS-LROMANO",
+      "key": 1
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00004",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-08-04T08:29:15.493434",
+      "source": "user:lromano",
+      "target": "host:WKS-LROMANO",
+      "key": 2
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00094",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-08-05T21:18:22.324288",
+      "source": "user:lromano",
+      "target": "host:WKS-LROMANO",
+      "key": 3
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00241",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-28T09:22:17.093019",
+      "source": "user:lromano",
+      "target": "host:db-02",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00259",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-31T11:49:43.264100",
+      "source": "user:lromano",
+      "target": "host:web-01",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00258",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-04T15:36:41.958528",
+      "source": "user:lromano",
+      "target": "host:WKS-SALVAREZ",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00161",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-28T14:04:07.984764",
+      "source": "user:gosei",
+      "target": "host:WKS-GOSEI",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00056",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-29T22:36:43.947557",
+      "source": "user:gosei",
+      "target": "host:WKS-GOSEI",
+      "key": 1
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00158",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-08-05T18:53:45.344929",
+      "source": "user:gosei",
+      "target": "host:WKS-GOSEI",
+      "key": 2
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00255",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-03T20:01:46.043629",
+      "source": "user:gosei",
+      "target": "host:WKS-HLINDQVIST",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00038",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-28T15:29:26.002186",
+      "source": "user:npatel",
+      "target": "host:WKS-NPATEL",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00010",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-07-29T18:15:25.535238",
+      "source": "user:npatel",
+      "target": "host:WKS-NPATEL",
+      "key": 1
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00041",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-08-04T05:33:35.017918",
+      "source": "user:npatel",
+      "target": "host:WKS-NPATEL",
+      "key": 2
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00247",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-29T04:11:43.567900",
+      "source": "user:npatel",
+      "target": "host:WKS-MNGUYEN",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00226",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-31T14:55:03.886266",
+      "source": "user:npatel",
+      "target": "host:WKS-SALVAREZ",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00147",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-29T01:22:19.283156",
+      "source": "host:dc-01",
+      "target": "ip:10.42.26.1",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00084",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-29T01:53:58.695609",
+      "source": "host:dc-01",
+      "target": "ip:10.42.26.1",
+      "key": 1
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00166",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-30T02:08:04.694811",
+      "source": "host:dc-01",
+      "target": "ip:10.42.26.1",
+      "key": 2
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00067",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-08-01T03:45:34.258757",
+      "source": "host:dc-01",
+      "target": "ip:10.42.26.1",
+      "key": 3
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00112",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-08-01T23:50:36.324379",
+      "source": "host:dc-01",
+      "target": "ip:10.42.26.1",
+      "key": 4
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00100",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-08-03T02:16:43.109713",
+      "source": "host:dc-01",
+      "target": "ip:10.42.26.1",
+      "key": 5
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00146",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-08-05T07:43:24.021063",
+      "source": "host:dc-01",
+      "target": "ip:10.42.26.1",
+      "key": 6
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00147",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-07-29T01:22:19.283156",
+      "source": "host:dc-01",
+      "target": "ip:198.51.100.22",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00084",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-29T01:53:58.695609",
+      "source": "host:dc-01",
+      "target": "process:schtasks.exe",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00067",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-08-01T03:45:34.258757",
+      "source": "host:dc-01",
+      "target": "process:powershell.exe",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00112",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-08-01T23:50:36.324379",
+      "source": "host:dc-01",
+      "target": "ip:192.0.2.203",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00100",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-08-03T02:16:43.109713",
+      "source": "host:dc-01",
+      "target": "process:rundll32.exe",
+      "key": 0
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00146",
+      "alert_type": "unusual_outbound_network",
+      "timestamp": "2026-08-05T07:43:24.021063",
+      "source": "host:dc-01",
+      "target": "ip:192.0.2.15",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00160",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-29T15:33:27.384711",
+      "source": "user:athompson",
+      "target": "host:web-01",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00162",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-08-02T00:22:15.403587",
+      "source": "user:athompson",
+      "target": "host:fileserver-01",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00213",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-02T23:34:33.225317",
+      "source": "user:athompson",
+      "target": "host:WKS-GOSEI",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00082",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-08-03T04:48:31.157929",
+      "source": "user:athompson",
+      "target": "host:WKS-ATHOMPSON",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00040",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-08-03T23:33:29.469808",
+      "source": "user:athompson",
+      "target": "host:WKS-ATHOMPSON",
+      "key": 1
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00014",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-08-05T02:16:08.831758",
+      "source": "user:athompson",
+      "target": "host:WKS-ATHOMPSON",
+      "key": 2
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00075",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-07-29T17:58:17.346712",
+      "source": "user:svc_backup",
+      "target": "host:fileserver-01",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00100",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-08-03T02:16:43.109713",
+      "source": "user:svc_backup",
+      "target": "host:dc-01",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00096",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-08-03T14:29:16.857781",
+      "source": "user:svc_backup",
+      "target": "host:backup-01",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00197",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-07-30T00:08:45.767841",
+      "source": "user:hlindqvist",
+      "target": "host:WKS-HLINDQVIST",
+      "key": 0
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00177",
+      "alert_type": "privilege_escalation",
+      "timestamp": "2026-08-02T22:31:12.208736",
+      "source": "user:hlindqvist",
+      "target": "host:WKS-HLINDQVIST",
+      "key": 1
+    },
+    {
+      "relation": "associated_with",
+      "alert_id": "ALERT-00230",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-08-02T19:51:29.227825",
+      "source": "user:hlindqvist",
+      "target": "host:backup-01",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00214",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-30T03:11:00.055839",
+      "source": "host:WKS-ATHOMPSON",
+      "target": "ip:10.42.10.55",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00082",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-08-03T04:48:31.157929",
+      "source": "host:WKS-ATHOMPSON",
+      "target": "ip:10.42.10.55",
+      "key": 1
+    },
+    {
+      "relation": "connected_to",
+      "alert_id": "ALERT-00214",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-30T03:11:00.055839",
+      "source": "host:WKS-ATHOMPSON",
+      "target": "ip:10.42.20.2",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00214",
+      "alert_type": "lateral_movement",
+      "timestamp": "2026-07-30T03:11:00.055839",
+      "source": "host:WKS-ATHOMPSON",
+      "target": "process:wmic.exe",
+      "key": 0
+    },
+    {
+      "relation": "executed",
+      "alert_id": "ALERT-00082",
+      "alert_type": "suspicious_process",
+      "timestamp": "2026-08-03T04:48:31.157929",
+      "source": "host:WKS-ATHOMPSON",
+      "target": "process:wscript.exe",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00040",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-08-03T23:33:29.469808",
+      "source": "host:WKS-ATHOMPSON",
+      "target": "ip:198.51.100.58",
+      "key": 0
+    },
+    {
+      "relation": "has_ip",
+      "alert_id": "ALERT-00014",
+      "alert_type": "anomalous_login",
+      "timestamp": "2026-08-05T02:16:08.831758",
+      "source": "host:WKS-ATHOMPSON",
+      "target": "ip:203.0.113.27",
+      "key": 0
+    }
+  ]
+}

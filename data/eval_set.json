@@ -1,0 +1,272 @@
+[
+  {
+    "alert_id": "ALERT-00017",
+    "ground_truth_label": "false_positive",
+    "expected_severity": "low",
+    "alert_type": "anomalous_login"
+  },
+  {
+    "alert_id": "ALERT-00018",
+    "ground_truth_label": "false_positive",
+    "expected_severity": "low",
+    "alert_type": "anomalous_login"
+  },
+  {
+    "alert_id": "ALERT-00025",
+    "ground_truth_label": "true_positive",
+    "expected_severity": "high",
+    "alert_type": "anomalous_login"
+  },
+  {
+    "alert_id": "ALERT-00026",
+    "ground_truth_label": "true_positive",
+    "expected_severity": "high",
+    "alert_type": "anomalous_login"
+  },
+  {
+    "alert_id": "ALERT-00029",
+    "ground_truth_label": "needs_investigation",
+    "expected_severity": "medium",
+    "alert_type": "anomalous_login"
+  },
+  {
+    "alert_id": "ALERT-00031",
+    "ground_truth_label": "true_positive",
+    "expected_severity": "high",
+    "alert_type": "anomalous_login"
+  },
+  {
+    "alert_id": "ALERT-00032",
+    "ground_truth_label": "needs_investigation",
+    "expected_severity": "high",
+    "alert_type": "anomalous_login"
+  },
+  {
+    "alert_id": "ALERT-00041",
+    "ground_truth_label": "needs_investigation",
+    "expected_severity": "high",
+    "alert_type": "anomalous_login"
+  },
+  {
+    "alert_id": "ALERT-00048",
+    "ground_truth_label": "false_positive",
+    "expected_severity": "low",
+    "alert_type": "anomalous_login"
+  },
+  {
+    "alert_id": "ALERT-00055",
+    "ground_truth_label": "true_positive",
+    "expected_severity": "high",
+    "alert_type": "suspicious_process"
+  },
+  {
+    "alert_id": "ALERT-00062",
+    "ground_truth_label": "needs_investigation",
+    "expected_severity": "medium",
+    "alert_type": "suspicious_process"
+  },
+  {
+    "alert_id": "ALERT-00064",
+    "ground_truth_label": "false_positive",
+    "expected_severity": "medium",
+    "alert_type": "suspicious_process"
+  },
+  {
+    "alert_id": "ALERT-00067",
+    "ground_truth_label": "needs_investigation",
+    "expected_severity": "medium",
+    "alert_type": "suspicious_process"
+  },
+  {
+    "alert_id": "ALERT-00072",
+    "ground_truth_label": "false_positive",
+    "expected_severity": "low",
+    "alert_type": "suspicious_process"
+  },
+  {
+    "alert_id": "ALERT-00076",
+    "ground_truth_label": "needs_investigation",
+    "expected_severity": "high",
+    "alert_type": "suspicious_process"
+  },
+  {
+    "alert_id": "ALERT-00090",
+    "ground_truth_label": "true_positive",
+    "expected_severity": "critical",
+    "alert_type": "suspicious_process"
+  },
+  {
+    "alert_id": "ALERT-00100",
+    "ground_truth_label": "true_positive",
+    "expected_severity": "critical",
+    "alert_type": "suspicious_process"
+  },
+  {
+    "alert_id": "ALERT-00102",
+    "ground_truth_label": "false_positive",
+    "expected_severity": "medium",
+    "alert_type": "suspicious_process"
+  },
+  {
+    "alert_id": "ALERT-00108",
+    "ground_truth_label": "false_positive",
+    "expected_severity": "medium",
+    "alert_type": "unusual_outbound_network"
+  },
+  {
+    "alert_id": "ALERT-00109",
+    "ground_truth_label": "true_positive",
+    "expected_severity": "high",
+    "alert_type": "unusual_outbound_network"
+  },
+  {
+    "alert_id": "ALERT-00128",
+    "ground_truth_label": "true_positive",
+    "expected_severity": "high",
+    "alert_type": "unusual_outbound_network"
+  },
+  {
+    "alert_id": "ALERT-00130",
+    "ground_truth_label": "false_positive",
+    "expected_severity": "low",
+    "alert_type": "unusual_outbound_network"
+  },
+  {
+    "alert_id": "ALERT-00137",
+    "ground_truth_label": "true_positive",
+    "expected_severity": "critical",
+    "alert_type": "unusual_outbound_network"
+  },
+  {
+    "alert_id": "ALERT-00145",
+    "ground_truth_label": "needs_investigation",
+    "expected_severity": "medium",
+    "alert_type": "unusual_outbound_network"
+  },
+  {
+    "alert_id": "ALERT-00150",
+    "ground_truth_label": "false_positive",
+    "expected_severity": "medium",
+    "alert_type": "unusual_outbound_network"
+  },
+  {
+    "alert_id": "ALERT-00152",
+    "ground_truth_label": "needs_investigation",
+    "expected_severity": "medium",
+    "alert_type": "unusual_outbound_network"
+  },
+  {
+    "alert_id": "ALERT-00155",
+    "ground_truth_label": "needs_investigation",
+    "expected_severity": "medium",
+    "alert_type": "unusual_outbound_network"
+  },
+  {
+    "alert_id": "ALERT-00167",
+    "ground_truth_label": "false_positive",
+    "expected_severity": "medium",
+    "alert_type": "privilege_escalation"
+  },
+  {
+    "alert_id": "ALERT-00168",
+    "ground_truth_label": "needs_investigation",
+    "expected_severity": "medium",
+    "alert_type": "privilege_escalation"
+  },
+  {
+    "alert_id": "ALERT-00182",
+    "ground_truth_label": "needs_investigation",
+    "expected_severity": "high",
+    "alert_type": "privilege_escalation"
+  },
+  {
+    "alert_id": "ALERT-00183",
+    "ground_truth_label": "needs_investigation",
+    "expected_severity": "high",
+    "alert_type": "privilege_escalation"
+  },
+  {
+    "alert_id": "ALERT-00189",
+    "ground_truth_label": "true_positive",
+    "expected_severity": "critical",
+    "alert_type": "privilege_escalation"
+  },
+  {
+    "alert_id": "ALERT-00191",
+    "ground_truth_label": "false_positive",
+    "expected_severity": "low",
+    "alert_type": "privilege_escalation"
+  },
+  {
+    "alert_id": "ALERT-00197",
+    "ground_truth_label": "true_positive",
+    "expected_severity": "critical",
+    "alert_type": "privilege_escalation"
+  },
+  {
+    "alert_id": "ALERT-00199",
+    "ground_truth_label": "false_positive",
+    "expected_severity": "medium",
+    "alert_type": "privilege_escalation"
+  },
+  {
+    "alert_id": "ALERT-00202",
+    "ground_truth_label": "true_positive",
+    "expected_severity": "critical",
+    "alert_type": "privilege_escalation"
+  },
+  {
+    "alert_id": "ALERT-00213",
+    "ground_truth_label": "true_positive",
+    "expected_severity": "critical",
+    "alert_type": "lateral_movement"
+  },
+  {
+    "alert_id": "ALERT-00220",
+    "ground_truth_label": "false_positive",
+    "expected_severity": "low",
+    "alert_type": "lateral_movement"
+  },
+  {
+    "alert_id": "ALERT-00223",
+    "ground_truth_label": "needs_investigation",
+    "expected_severity": "high",
+    "alert_type": "lateral_movement"
+  },
+  {
+    "alert_id": "ALERT-00235",
+    "ground_truth_label": "needs_investigation",
+    "expected_severity": "medium",
+    "alert_type": "lateral_movement"
+  },
+  {
+    "alert_id": "ALERT-00237",
+    "ground_truth_label": "true_positive",
+    "expected_severity": "critical",
+    "alert_type": "lateral_movement"
+  },
+  {
+    "alert_id": "ALERT-00245",
+    "ground_truth_label": "needs_investigation",
+    "expected_severity": "high",
+    "alert_type": "lateral_movement"
+  },
+  {
+    "alert_id": "ALERT-00251",
+    "ground_truth_label": "false_positive",
+    "expected_severity": "low",
+    "alert_type": "lateral_movement"
+  },
+  {
+    "alert_id": "ALERT-00257",
+    "ground_truth_label": "true_positive",
+    "expected_severity": "critical",
+    "alert_type": "lateral_movement"
+  },
+  {
+    "alert_id": "ALERT-00259",
+    "ground_truth_label": "false_positive",
+    "expected_severity": "low",
+    "alert_type": "lateral_movement"
+  }
+]
