@@ -1,6 +1,6 @@
 # Meridian Cloud Alert Triage
 
-A multi-agent SOC alert triage pipeline: it takes a raw security alert, retrieves
+A multi-agent SOC alert triage pipeline: takes a raw security alert, retrieves
 the relevant playbook and MITRE ATT&CK guidance, pulls in related activity from
 an entity relationship graph, and produces a reviewed verdict — label, severity,
 rationale, and recommended actions — through an analyst/reviewer agent pair
@@ -9,7 +9,7 @@ pipeline actually works, not just runs.
 
 Meridian Cloud is a fictitious B2B SaaS company; all data is synthetic.
 
-## Why this exists
+## Workplace Implemenatation
 
 A SOC analyst's real bottleneck isn't detection — it's the volume of alerts
 that need a first-pass triage before anyone can act on them. This project is
@@ -38,12 +38,12 @@ reviewer (LLM) ─────► approves, or rejects with feedback
 finalize ──────► verdict
 ```
 
-Two things distinguish the "multi-agent" part from a single wrapped LLM call:
-the reviewer sees the same retrieved context the analyst did and can reject a
-verdict that ignores it (e.g. a label that doesn't account for a
-credential-dumping alert the graph shows on the same host minutes earlier),
-and the loop is bounded — one revision, then finalize regardless, so a
-disagreement can't hang the pipeline.
+Two things distinguish the "multi-agent" function from a single wrapped LLM call:
+a. The reviewer sees the same retrieved context as the analyst and can reject a
+verdict that ignores that context (e.g. a label that doesn't account for a
+credential-dumping alert the graph shows on the same host minutes earlier).
+b. The loop is bounded — one revision, then finalize, preventing a
+disagreement in the pipeline.
 
 ## Build phases
 
@@ -80,7 +80,7 @@ Full per-alert results: `eval/results.csv`.
 
 ## Entity graph
 
-Built from all 260 alerts (not just the labeled subset): 192 nodes, 676 edges.
+Built from all 260 alerts (not only the labeled subset): 192 nodes, 676 edges.
 Nodes are typed (`host`, `user`, `ip`, `process`); edges carry the source
 alert's id, type, and timestamp. Because a `dest_ip` in one alert is often the
 same address another host reports as its own `source_ip` elsewhere, the graph
@@ -98,13 +98,16 @@ Azure AI Search (vector + filtered search) · NetworkX · pandas · Streamlit
 ## Deployment
 
 The FastAPI layer (`api/main.py`) is containerized and ships through a full
-CI/CD pipeline, not just run locally:
+CI/CD pipeline:
 
 - **Docker** — `Dockerfile` packages the API; credentials are injected at
   runtime via env vars, never baked into the image.
 - **Kubernetes** — proved end-to-end on Azure Kubernetes Service (pods
   `1/1 Running`, LoadBalancer with a public IP, `/health` responding) before
   being torn down to control cost. Manifests live in `k8s/`.
+
+  <img src="docs/screenshots/aks-deploy-proof.jpeg" alt="kubectl showing pods Running, service with a public LoadBalancer IP, and a successful curl against /health on AKS" width="700">
+
 - **CI** — every push/PR runs lint (`ruff`) + tests (`pytest`) via GitHub
   Actions (`.github/workflows/ci.yml`).
 - **CD** — every merge to `main` builds the image, pushes it to Azure
@@ -113,7 +116,13 @@ CI/CD pipeline, not just run locally:
   (Entra ID App Registration + federated credential) — no long-lived
   cloud secrets stored in GitHub.
 
+  <img src="docs/screenshots/github-actions-cd.jpeg" alt="GitHub Actions CI/CD run: lint-and-test, build, and deploy jobs all passing on a merge to main" width="700">
+
 **Live demo:** https://meridian-triage-api.proudground-723e8ce0.centralus.azurecontainerapps.io/health
+
+<img src="docs/screenshots/live-health-check.jpeg" alt="Terminal showing curl against the live Azure Container Apps URL returning status ok" width="500">
+
+<img src="docs/screenshots/api-docs.jpeg" alt="Swagger /docs page for the Meridian Cloud Alert Triage API showing the health, alerts, and triage endpoints" width="700">
 
 ## Setup
 
@@ -144,7 +153,7 @@ cost-control choice. `index_to_azure_search.py` only ever touches
 `AZURE_SEARCH_INDEX_NAME`; it never reads or writes any other index that may
 live in the same service.
 
-## Running it
+## Running the App 
 
 ```bash
 # 1. Generate the synthetic alert set (data/raw_alerts.json, data/eval_set.json)
