@@ -34,3 +34,30 @@ jobs:
 
       - name: Build Docker image
         run: docker build -t meridian-triage-api:${{ github.sha }} .
+
+  deploy:
+    needs: build
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Azure login (OIDC)
+        uses: azure/login@v3
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+
+      - name: Build and push image to ACR
+        run: az acr build --registry meridiantriageacr --image meridian-triage-api:${{ github.sha }} .
+
+      - name: Deploy to Container Apps
+        run: |
+          az containerapp update \
+            --name meridian-triage-api \
+            --resource-group meridian-triage-rg \
+            --image meridiantriageacr.azurecr.io/meridian-triage-api:${{ github.sha }}
