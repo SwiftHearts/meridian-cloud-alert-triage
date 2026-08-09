@@ -95,6 +95,26 @@ Python · LangGraph · LangChain (`langchain-openai`) · Azure OpenAI
 (`gpt-5-mini` for the agents, `text-embedding-3-small` for retrieval) ·
 Azure AI Search (vector + filtered search) · NetworkX · pandas · Streamlit
 
+## Deployment
+
+The FastAPI layer (`api/main.py`) is containerized and ships through a full
+CI/CD pipeline, not just run locally:
+
+- **Docker** — `Dockerfile` packages the API; credentials are injected at
+  runtime via env vars, never baked into the image.
+- **Kubernetes** — proved end-to-end on Azure Kubernetes Service (pods
+  `1/1 Running`, LoadBalancer with a public IP, `/health` responding) before
+  being torn down to control cost. Manifests live in `k8s/`.
+- **CI** — every push/PR runs lint (`ruff`) + tests (`pytest`) via GitHub
+  Actions (`.github/workflows/ci.yml`).
+- **CD** — every merge to `main` builds the image, pushes it to Azure
+  Container Registry, and deploys it to Azure Container Apps automatically.
+  Authentication uses OIDC federation between GitHub Actions and Azure
+  (Entra ID App Registration + federated credential) — no long-lived
+  cloud secrets stored in GitHub.
+
+**Live demo:** https://meridian-triage-api.proudground-723e8ce0.centralus.azurecontainerapps.io/health
+
 ## Setup
 
 ```bash
