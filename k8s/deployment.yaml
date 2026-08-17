@@ -1,13 +1,24 @@
 # Azure Search/OpenAI/Cosmos credentials come from the `meridian-triage-secrets`
 # Secret (created imperatively from .env — see AKS deploy steps — never committed).
+
+# Create a Kubernetes Deployment named meridian-triage-api inside the meridian namespace. 
+# Keep two Pods running. Each Pod should run the meridian-triage-api:latest Docker image stored 
+# in Azure Container Registry. The FastAPI application listens on port 8000. Load Azure credentials 
+# from the meridian-triage-secrets Kubernetes Secret. Check /health to determine whether each Pod is 
+# ready and alive. Give each container 0.25 CPU/256 MiB requested resources, with limits of 0.5 CPU/512 MiB.
+
+# Run docker image, keep 2 replicas, expose port 8000, and set environment variables from the secret.
 apiVersion: apps/v1
+# Manage the pods and containers for the meridian-triage-api application.
 kind: Deployment
 metadata:
   name: meridian-triage-api
+  # "Folder" inside the cluster for the meridian-triage-api application.
   namespace: meridian
   labels:
     app: meridian-triage-api
 spec:
+  # 2 copies of the app
   replicas: 2
   selector:
     matchLabels:
@@ -19,6 +30,7 @@ spec:
     spec:
       containers:
         - name: meridian-triage-api
+          # Container registry and image for the meridian-triage-api application, using the latest tag.
           image: meridiantriageacr.azurecr.io/meridian-triage-api:latest
           ports:
             - containerPort: 8000
@@ -36,6 +48,7 @@ spec:
               path: /health
               port: 8000
             initialDelaySeconds: 15
+            # If liveness fails repeatedly, the container will be restarted to recover from potential issues.
             periodSeconds: 20
           resources:
             requests:

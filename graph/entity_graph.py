@@ -24,9 +24,11 @@ Run: python graph/entity_graph.py
 """
 
 import json
+# Allows automatic creation of values for dictionary keys
 from collections import defaultdict
 from pathlib import Path
 
+# Creation of graph of nodes and connections (edges)
 import networkx as nx
 
 DATA_DIR = Path(__file__).resolve().parent.parent / "data"
@@ -39,8 +41,11 @@ GRAPH_PATH = GRAPH_DIR / "entity_graph.json"
 # Graph construction
 # ---------------------------------------------------------------------------
 
-# Helper functions for building a directed multigraph of entities and their relationships 
-# from alert data.
+
+# Create a unique node ID for an entity based on its type and value. This ensures that each
+# entity (e.g., host, user, IP, process) has a unique identifier in the graph, allowing for 
+# accurate representation of relationships between different entities. Some keys may share 
+# the same value (e.g., host and source_ip), so we prefix the value with the entity type to avoid collisions.
 def _node_id(entity_type: str, value: str) -> str:
     return f"{entity_type}:{value}"
 
@@ -54,8 +59,10 @@ def _add_entity(graph: nx.MultiDiGraph, entity_type: str, value) -> str | None:
     return node_id
 
 # Add a directed edge between two entity nodes in the graph, with metadata about the alert that 
-# connects them. Graph stores nodes and edges. Di means directed, Multi means multiple edges 
-# can exist between the same pair of nodes (e.g., multiple alerts linking the same user and host).
+# connects them. Graph stores nodes and edges.  Multi: multiple edges can exist between the same 
+# pair of nodes (e.g., multiple alerts linking the same user and host); Di: directed edges (e.g., 
+# user -> host, host -> IP). Each edge is labeled with the type of relationship and metadata 
+# about the alert that connects them.
 def _add_relationship(graph: nx.MultiDiGraph, src_id: str, dst_id: str, relation: str, alert: dict):
     graph.add_edge(
         src_id, dst_id,
@@ -74,6 +81,8 @@ def build_graph(alerts: list[dict]) -> nx.MultiDiGraph:
     # For each alert, extract relevant entities (user, host, source IP, destination IP, 
     # process) and add them to the graph. 
     for alert in alerts:
+        # Add nodes for each entity type (host, user, source IP, destination IP, process) if they exist in the alert.
+        # Use 'get' to safely retrieve values from the alert dictionary, returning None if the key is not present.
         host_id = _add_entity(graph, "host", alert.get("host"))
         user_id = _add_entity(graph, "user", alert.get("user"))
         src_ip_id = _add_entity(graph, "ip", alert.get("source_ip"))
@@ -99,6 +108,8 @@ def load_alerts(path: Path = ALERTS_PATH) -> list[dict]:
 
 # Save the graph to a JSON compatible file in node-link format
 def save_graph(graph: nx.MultiDiGraph, path: Path = GRAPH_PATH):
+    # Convert the graph to node-link format (a JSON-compatible representation of 
+    # the graph) and write it to a file. 
     path.write_text(json.dumps(nx.node_link_data(graph), indent=2))
 
 # Load the graph from a JSON file in node-link format. Reads the file, 
@@ -140,13 +151,15 @@ def summarize_context(graph: nx.MultiDiGraph, entity_type: str, value: str, hops
 
     # Get the subgraph of nodes and edges within the specified number of hops
     sub = entity_context(graph, entity_type, value, hops=hops)
-    # Sort edges by timestamp for a chronological summary of related activity. Each edge represents
+
+    # Sort connections chronologically by timestamp for a summary of related activity. Each edge represents
     # a relationship between two entities, and the summary includes the timestamp, source and
     # destination entities, the type of relationship, and the alert metadata.
     # e: edge tuple (u, v, d) where u and v are node IDs and d is the edge data dictionary
     edges = sorted(sub.edges(data=True), key=lambda e: e[2]["timestamp"])
 
     lines = [f"Related activity within {hops} hop(s) of {entity_type}:{value}:"]
+
     # For each edge in the sorted list, extract the source (u) and destination (v) nodes, and 
     # the dictionary (d) containing the relationship type, and the alert metadata.
     for u, v, d in edges:
@@ -167,9 +180,13 @@ def main():
     graph = build_graph(alerts)
     save_graph(graph)
 
+    # Defaultdict is used to automatically initialize counts for each node type and edge relation, 
+    # i.e. if there is no entry for a particular type or relation, it will default to 0. 
+    # This avoids KeyError exceptions when counting.
     nodes_by_type = defaultdict(int)
     # Count the number of nodes of each type in the graph (e.g., host, user, ip, process) and store
-    # the counts in a dictionary. This provides a summary of the graph's composition.
+    # the counts in a dictionary. This provides a summary of the graph's composition. Attributes 
+    # is a dictionary of metadata associated with each node, including its type and value.
     for _, attrs in graph.nodes(data=True):
         nodes_by_type[attrs["type"]] += 1
 
@@ -188,3 +205,6 @@ def main():
 # Run main() only if this script is executed directly, not when imported as a module.
 if __name__ == "__main__":
     main()
+
+# entity_graph.json is the result of running this script, and can be loaded into a NetworkX graph object 
+# for further analysis or visualization.

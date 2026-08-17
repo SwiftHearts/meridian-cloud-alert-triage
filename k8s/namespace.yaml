@@ -1,3 +1,6 @@
+# Create the workspace for the meridian-triage-api application inside the Kubernetes cluster. 
+# This namespace isolates the resources and configurations for the application, ensuring that it 
+# operates independently from other applications in the cluster.
 apiVersion: v1
 kind: Namespace
 metadata:

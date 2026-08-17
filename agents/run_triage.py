@@ -1,6 +1,6 @@
 """
 Runs the Phase 4 multi-agent triage pipeline (triage_graph.py) against a
-handful of sample alerts and prints each verdict — a sanity check that
+handful of sample alerts and prints each verdict — a check that
 retrieval, graph context, and the analyst/reviewer loop all work end to end.
 
 Run: python agents/run_triage.py [n]   (n = number of alerts to sample, default 5)

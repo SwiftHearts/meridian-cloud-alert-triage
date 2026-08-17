@@ -5,18 +5,18 @@ the relevant playbook and MITRE ATT&CK guidance, pulls in related activity from
 an entity relationship graph, and produces a reviewed verdict — label, severity,
 rationale, and recommended actions — through an analyst/reviewer agent pair
 built on LangGraph. Scored against a held-out labeled set to check the
-pipeline actually works, not just runs.
+pipeline works, rather than just runs.
 
 Meridian Cloud is a fictitious B2B SaaS company; all data is synthetic.
 
 ## Workplace Implemenatation
 
-A SOC analyst's real bottleneck isn't detection — it's the volume of alerts
+A SOC analyst's bottleneck isn't detection — it's the volume of alerts
 that need a first-pass triage before anyone can act on them. This project is
 a working model of that first pass: given one alert, decide whether it's a
 false positive, needs a human to look closer, or is a genuine incident —
 grounded in written playbook guidance and in what else has been happening
-around the same host, user, or IP, not just the alert text in isolation.
+around the same host, user, or IP, rather than just the alert text in isolation.
 
 ## Architecture
 

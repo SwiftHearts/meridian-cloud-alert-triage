@@ -24,7 +24,8 @@ import pandas as pd
 
 # Add the agents directory to the Python path so we can import triage_graph.py
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "agents"))
-from triage_graph import triage_alert  # noqa: E402
+from triage_graph import triage_alert  # noqa: E402 (ignore import not at top of file, needed to 
+# show where agents are added to path first)
 
 DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 RESULTS_PATH = Path(__file__).resolve().parent / "results.csv"

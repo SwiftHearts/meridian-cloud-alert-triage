@@ -39,22 +39,28 @@ from pydantic import BaseModel  # Data validation and transform LLM output to st
 
 load_dotenv()
 
+# Create logger for this module to log messages, warnings, and errors. 
 logger = logging.getLogger(__name__)
 
 # Add the "graph" directory to the Python import path so we can import cosmos_graph.py
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "graph"))
-from cosmos_graph import get_client, summarize_context  # noqa: E402
+
+# Import the Gremlin client and context summarization function from cosmos_graph.py, which allows
+# us to query the Azure Cosmos DB graph for related entity activity.
+# noqa: E402 (ignore import not at top of file, needed to show where graph is added to path first)
+from cosmos_graph import get_client, summarize_context  
 
 # Add the "rag_retrieval" directory to the Python import path so we can import rag_retrieval.py
 from rag_retrieval import retrieve_playbook_guidance
 
 CHAT_DEPLOYMENT = os.environ["AZURE_OPENAI_CHAT_DEPLOYMENT"]
 
-# How long to wait on the analyst/reviewer LLM before giving up, and how many
-# times the underlying OpenAI SDK should retry a failed request (transient
-# 5xx/rate-limit/timeout errors) with its own exponential backoff before we
-# see a failure at all.
+# Look for an environment variable called LLM_TIMEOUT_SECONDS. If it doesn’t exist, use 30.
+# Don’t wait longer than this time for the LLM request before treating it as timed out.
 LLM_TIMEOUT_SECONDS = float(os.environ.get("LLM_TIMEOUT_SECONDS", 30))
+
+# Look for an environment variable called LLM_MAX_RETRIES. If it doesn’t exist, use 2.
+# Retry the LLM request this many times (plus the initial attempt) on transient failures 
 LLM_MAX_RETRIES = int(os.environ.get("LLM_MAX_RETRIES", 2))
 
 # Connection to Azure OpenAI chat model, using environment variables for endpoint,
@@ -71,29 +77,32 @@ _llm = AzureChatOpenAI(
 # entities (hosts, users, IPs, processes) and alerts
 _graph_client = get_client()
 
-# Look up to 2 relationships away from the alert's host in the entity graph
+# Look up to 2 connections away from the alert's host in the entity graph
 GRAPH_CONTEXT_HOPS = 2
 
 # Limit the number of revision rounds to avoid infinite loops in case of disagreement
 # between analyst and reviewer
 MAX_REVISIONS = 1
 
-# Hard deadline for the two context lookups (RAG playbook retrieval, Cosmos
-# graph query) that feed the analyst prompt. Neither the Azure Search/OpenAI
-# SDK nor the Gremlin client is guaranteed to fail fast on a slow endpoint, so
-# each lookup runs in this executor and is bounded with Future.result(timeout=...)
-# rather than trusting the client's own defaults — a hung dependency degrades
-# that one piece of context instead of blocking the whole triage.
+# Hard deadline of 8 seconds for the two context lookups (RAG playbook retrieval, Cosmos
+# graph query) that feed the analyst prompt. 
 CONTEXT_LOOKUP_TIMEOUT_SECONDS = float(os.environ.get("CONTEXT_LOOKUP_TIMEOUT_SECONDS", 8))
+
+# ThreadPoolExecutor is used to run the context lookups in parallel, allowing for concurrent execution of tasks.
+# Allow up to 2 threads to run context lookups concurrently, which is useful for the two independent lookups (RAG and graph) 
 _context_executor = ThreadPoolExecutor(max_workers=2, thread_name_prefix="triage-context")
 
-
+# Structure to run a function with positional and keyword arguments, with a timeout. 
 def _run_with_deadline(fn, *args, timeout: float, **kwargs):
     """Run fn(*args, **kwargs) in the context executor, bounded by timeout.
     Raises concurrent.futures.TimeoutError (or whatever fn raised) on
     failure; a slow call that later completes keeps running in the
     background but its result is discarded by the caller."""
+
+    # Submit the function to the thread pool executor 
     future: Future = _context_executor.submit(fn, *args, **kwargs)
+
+    # Wait for the result with a timeout. 
     return future.result(timeout=timeout)
 
 
@@ -101,7 +110,7 @@ def _run_with_deadline(fn, *args, timeout: float, **kwargs):
 # Structured LLM outputs
 # ---------------------------------------------------------------------------
 
-# What the analyst outputs: a label, severity, rationale, and recommended actions. 
+# Analyst output: label, severity, rationale, and recommended actions. 
 class AnalystVerdict(BaseModel):
     label: Literal["false_positive", "needs_investigation", "true_positive"]
     severity: Literal["low", "medium", "high", "critical"]
@@ -110,12 +119,14 @@ class AnalystVerdict(BaseModel):
     # assessment of the alert.
     recommended_actions: list[str]
 
-# The reviewer outputs a simple approval boolean and optional feedback string.
+# Reviewer output: approval boolean and optional feedback string.
 class ReviewResult(BaseModel):
     approved: bool
-    feedback: str  # empty string when approved
+    feedback: str  # empty string when analyst's verdict approved
 
 # Outputs from the LLMs are structured according to the above Pydantic models.
+# with_structured_output() is LangChain's chat model method that wraps the LLM to validate 
+# and transform its output into the defined schema.
 _analyst_llm = _llm.with_structured_output(AnalystVerdict)
 _reviewer_llm = _llm.with_structured_output(ReviewResult)
 
@@ -126,24 +137,26 @@ _reviewer_llm = _llm.with_structured_output(ReviewResult)
 
 # TriageState is a TypedDict (dictionary with fixed keys with specific value types) 
 # that defines the structure of the state passed between nodes in the triage graph.
+# This ensures all categories required are included, for validation & consistency
 class TriageState(TypedDict):
     alert: dict
 
-    # Context gathered from the playbook/ATT&CK guidance and the entity graph for this alert.
+    # Context gathered from the playbook/ATT&CK guidance.
     playbook_context: list[dict]
+    # Context gathered from the entity graph.
     graph_context: str
 
-    # The analyst's verdict, which is optional because it may not be present if the analyst 
-    # has not yet made a decision.
+    # Optional fields that may be added during the triage process, including the analyst's verdict,
+    # any feedback from the reviewer, the number of revisions made, and the final verdict.
     analyst_verdict: Optional[dict]
     review_feedback: Optional[str]
     revision_count: int
     final_verdict: Optional[dict]
 
-    # Names of pipeline components that fell back to a degraded path this run
-    # (e.g. "graph_context", "analyst", "reviewer") — surfaced on the final
-    # verdict so a degraded result is never silently indistinguishable from
-    # a normal one.
+   # Tracks which components of the triage process failed or were unavailable, allowing the 
+   # system to continue to operate in a degraded mode rather than failing completely. For example, if 
+   # the analyst LLM fails, the system can still provide a fallback verdict and continue to the 
+   # reviewer or finalize step.
     degraded: list[str]
 
 # Formats the playbook context into a human-readable string for inclusion in prompts to the LLMs.
@@ -170,27 +183,40 @@ def _format_playbook_context(chunks: list[dict]) -> str:
 # Cosmos DB call degrades just that piece of context rather than the whole
 # triage run, since the analyst/reviewer prompts already handle a "no
 # guidance found" style placeholder.
+
+# Function to gather context, the state will have the format of TriageState, a dictionary,
+# which includes the alert, playbook context, graph context, and any degraded components.
 def gather_context(state: TriageState) -> dict:
-    alert = state["alert"] # Raw alert data that triggered the triage process
+    # Get the raw alert data from the state, which is the input to the triage process.
+    alert = state["alert"] 
+    # Initialize a list to track which components of the context gathering process failed or were unavailable.
     degraded = list(state.get("degraded", []))
 
+    # Try to retrieve the playbook guidance witin the specified timeout restrictions
     try:
         playbook_context = _run_with_deadline(
             retrieve_playbook_guidance, alert, timeout=CONTEXT_LOOKUP_TIMEOUT_SECONDS
         )
+    # If it fails, log a warning
     except Exception:
         logger.warning(
             "Playbook retrieval failed or timed out for alert %s", alert.get("alert_id"), exc_info=True
         )
+        # Nothing returned for the playbook context
         playbook_context = []
         degraded.append("playbook_context")
 
+    # Try to run summarize_context wrapped in _run_with_deadline to ensure it respects the timeout restrictions
     try:
         graph_context = _run_with_deadline(
             summarize_context,
+            # Object used to communicate with Azure graph database
             _graph_client,
+            # Start from 'host' entity
             "host",
+            # Host value
             alert["host"],
+            # Number of connections away
             hops=GRAPH_CONTEXT_HOPS,
             timeout=CONTEXT_LOOKUP_TIMEOUT_SECONDS,
         )
@@ -204,14 +230,15 @@ def gather_context(state: TriageState) -> dict:
     return {"playbook_context": playbook_context, "graph_context": graph_context, "degraded": degraded}
 
 # Analyst node(agent): generates a verdict based on the alert, playbook guidance, and entity graph context.
+# Follow the structure of the TriageState class and return a dictionary
 def analyst_node(state: TriageState) -> dict:
     alert = state["alert"]
     # Check if this is a revision round by looking for review feedback in the state.
     feedback = state.get("review_feedback") 
-    # If feedback is present, it indicates that the analyst is revising their verdict 
-    # based on the reviewer's comments.
+    # Set is_revision to true if there is feedback
     is_revision = feedback is not None
 
+    # Prompt to send to the Analyst Agent
     prompt = f"""You are a SOC triage analyst for Meridian Cloud. Classify the alert below.
 
 Alert:
@@ -225,35 +252,36 @@ touching the same host, user, IPs, or processes — use this to catch \
 correlation a single alert can't show on its own):
 {state["graph_context"]}
 """
-    # If this is a revision round, include the reviewer's feedback in the prompt so the analyst
+    # If this is a revision round, include the reviewer's feedback in the prompt 
     if is_revision:
         prompt += f"\nA reviewer rejected your previous verdict with this feedback — revise accordingly:\n{feedback}\n"
 
-    # Use the Azure OpenAI chat model to generate a structured verdict based on the prompt.
-    # AzureChatOpenAI already retries transient failures (timeout/5xx/rate-limit)
-    # up to LLM_MAX_RETRIES with backoff before raising — if it still fails,
-    # fail safe: flag the alert for manual review rather than dropping it or
-    # crashing the pipeline.
+   # Retrieve the 'degraded' list or use an empty list
     degraded = list(state.get("degraded", []))
     try:
+        # Try to run the analyst llm
         verdict = _analyst_llm.invoke(prompt)
+        # Convert the pydantic object into a python dictionary
         verdict_dict = verdict.model_dump()
     except Exception:
         logger.error(
+            # Include the alert ID
             "Analyst LLM call failed for alert %s after retries", alert.get("alert_id"), exc_info=True
         )
+        # Fallback analyst verdict converted into a python dictionary
         verdict_dict = AnalystVerdict(
             label="needs_investigation",
             severity="medium",
             rationale="Automated analysis unavailable (LLM call failed after retries) — flagged for manual SOC review.",
             recommended_actions=["Manually triage this alert; automated triage is currently unavailable."],
         ).model_dump()
+        # Append to the 'degraded' list
         degraded.append("analyst")
 
     return {
-        # Store the analyst's verdict in the state, converting it to a dictionary for serialization.
+        # Store the analyst's verdict in the state
         "analyst_verdict": verdict_dict,
-        # Increment the revision count if this is a revision round, otherwise keep it the same.
+        # Get 'revision_count' or set to 0, add 1 if it's a revision, otherwise 0
         "revision_count": state.get("revision_count", 0) + (1 if is_revision else 0),
         "degraded": degraded,
     }
@@ -281,28 +309,26 @@ Entity graph context:
 Analyst verdict:
 {json.dumps(state["analyst_verdict"], indent=2)}
 """
-    # Use the Azure OpenAI chat model to generate a structured review result based on the prompt.
-    # If the reviewer LLM is unavailable after retries, fail open: don't block
-    # the alert on a second opinion that isn't coming. finalize_node checks
-    # "reviewer" in degraded to report this honestly rather than as approval.
+    # Get the 'degraded' list or return an empty list
     degraded = list(state.get("degraded", []))
     try:
+        # Try calling the reviewer LLM Agent
         result = _reviewer_llm.invoke(prompt)
+        # No feedback if the result is approved otherwise include feedback
         review_feedback = None if result.approved else result.feedback
     except Exception:
+        # Record the error in the application logs
         logger.error("Reviewer LLM call failed for alert %s after retries", exc_info=True)
         review_feedback = None
         degraded.append("reviewer")
 
-    # Store the review feedback in the state, setting it to None if the verdict was approved,
-    # or to the reviewer's feedback if it was rejected.
+   # Return the review feedback and the degraded list to the state
     return {"review_feedback": review_feedback, "degraded": degraded}
 
-# Directs the flow of the graph after the analyst node. If the analyst LLM
-# failed and fell back to a placeholder "needs_investigation" verdict,
-# there's nothing substantive for the reviewer to check — skip straight to
-# finalize instead of spending a reviewer call on a fallback verdict.
+# Directs the flow of the graph after the analyst node. 
 def route_after_analyst(state: TriageState) -> str:
+# Check whether analyst appeared in the degraded list, if so route to finalize, 
+# otherwise route to reviewer
     if "analyst" in state.get("degraded", []):
         return "finalize"
     return "reviewer"
@@ -310,8 +336,11 @@ def route_after_analyst(state: TriageState) -> str:
 # Directs the flow of the graph after the reviewer node, based on whether the verdict was
 # approved or rejected.
 def route_after_review(state: TriageState) -> str:
+    # If the reviewer LLM failed or was unavailable, finalize the verdict
     if state["review_feedback"] is None:
         return "finalize"
+        # If the number of revisions is greater than or equal to the maximum allowed revisions, 
+        # finalize the verdict
     if state["revision_count"] >= MAX_REVISIONS:
         return "finalize"
     # If the verdict was rejected and the maximum number of revisions has not been reached, 
@@ -321,10 +350,14 @@ def route_after_review(state: TriageState) -> str:
 # Finalize node(agent): compiles the final verdict, including whether it was reviewed,
 # any reviewer feedback, and the number of revisions made.
 def finalize_node(state: TriageState) -> dict:
+    # Retrieve the analyst's verdict from the state & convert it to a dictionary
     verdict = dict(state["analyst_verdict"])
+    # Retrieve the list of degraded components from the state, defaulting to an empty list if not present
     degraded = state.get("degraded", [])
+    # Determine if the reviewer ran successfully by checking if "reviewer" and "analyst" are not in the degraded list
     reviewer_ran = "reviewer" not in degraded and "analyst" not in degraded
 
+    # Verdict is considered reviewed if the reviewer ran successfully and there is no review feedback 
     verdict["reviewed"] = reviewer_ran and state.get("review_feedback") is None
     if state.get("review_feedback"):
         verdict["reviewer_note"] = state["review_feedback"]
@@ -332,6 +365,7 @@ def finalize_node(state: TriageState) -> dict:
         verdict["reviewer_note"] = (
             "Second-opinion review unavailable (LLM call failed) — verdict not independently checked."
         )
+    # Get the revision count from the state, defaulting to 0 if not present
     verdict["revision_count"] = state.get("revision_count", 0)
     if degraded:
         verdict["degraded_components"] = degraded
@@ -346,11 +380,14 @@ def finalize_node(state: TriageState) -> dict:
 # based on review feedback.
 def build_graph():
     graph = StateGraph(TriageState)
+    # Add the nodes and give them corresponding names
     graph.add_node("gather_context", gather_context)
     graph.add_node("analyst", analyst_node)
     graph.add_node("reviewer", reviewer_node)
     graph.add_node("finalize", finalize_node)
 
+    # Add edges to define the flow of the graph, starting from the START node to gather_context, 
+    # then to analyst
     graph.add_edge(START, "gather_context")
     graph.add_edge("gather_context", "analyst")
 
@@ -365,15 +402,16 @@ def build_graph():
 
     return graph.compile()
 
-
+# Run the build_graph function & store it as _compiled_graph, which is the compiled version of 
+# the triage graph that can be invoked with an alert.
 _compiled_graph = build_graph()
 
-# Public API for triaging an alert, returning the full state including context and final verdict.
+# Take this alert, create the initial state, run the entire LangGraph workflow, and give back the completed state.
 def run_triage(alert: dict) -> TriageState:
     """Full pipeline state (context + verdict) — for callers that want to
     show their work, e.g. the Streamlit UI."""
     return _compiled_graph.invoke({"alert": alert, "revision_count": 0, "degraded": []})
 
-# Public API for triaging an alert, returning only the final verdict.
+# Wrap run_triage, returning only the final verdict.
 def triage_alert(alert: dict) -> dict:
     return run_triage(alert)["final_verdict"]

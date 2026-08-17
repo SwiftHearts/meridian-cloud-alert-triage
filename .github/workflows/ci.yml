@@ -1,15 +1,21 @@
+# This is a GitHub Actions workflow file for continuous integration (CI) and continuous deployment (CD) of the Meridian Cloud Alert Triage project. 
+# It defines three jobs: lint-and-test, build, and deploy. The workflow is triggered on pull requests and pushes to the main branch.
+
 name: CI
 
+# The workflow is triggered on pull requests and pushes to the main branch.
 on:
   pull_request:
     branches: [main]
   push:
     branches: [main]
 
+# The workflow consists of three jobs: lint-and-test, build, and deploy.
 jobs:
   lint-and-test:
     runs-on: ubuntu-latest
     steps:
+    # Download the repository and set up Python 3.12, install dependencies, run linting with ruff, and run tests with pytest.
       - uses: actions/checkout@v7
 
       - uses: actions/setup-python@v7
@@ -20,11 +26,13 @@ jobs:
         run: pip install -r requirements.txt -r requirements-dev.txt
 
       - name: Lint (ruff)
+        # Run ruff to check for code style and quality issues in the repository.
         run: ruff check .
 
       - name: Test (pytest)
         run: pytest
 
+  # The build job depends on the successful completion of the lint-and-test job. It builds a Docker image for the application.
   build:
     needs: lint-and-test
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
@@ -33,18 +41,23 @@ jobs:
       - uses: actions/checkout@v7
 
       - name: Build Docker image
+        # Build a Docker image for the application and tag it with the current commit SHA.
         run: docker build -t meridian-triage-api:${{ github.sha }} .
 
   deploy:
     needs: build
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
+    # Require the OIDC token for Azure login and grant least privilege permissions to read repository contents.
     permissions:
       id-token: write
+      # Least privilege permissions for the deploy job to read repository contents.
       contents: read
     steps:
       - uses: actions/checkout@v7
 
+        # Use the Azure login action to authenticate with Azure using OIDC and the provided client ID, 
+        # tenant ID, and subscription ID from GitHub secrets.
       - name: Azure login (OIDC)
         uses: azure/login@v3
         with:
@@ -55,6 +68,7 @@ jobs:
       - name: Build and push image to ACR
         run: az acr build --registry meridiantriageacr --image meridian-triage-api:${{ github.sha }} .
 
+        # Deploy the newly built Docker image to Azure Container Apps, updating the existing application with the new image tagged with the current commit SHA.
       - name: Deploy to Container Apps
         run: |
           az containerapp update \

@@ -20,8 +20,11 @@ from pathlib import Path
 SEED = 42
 random.seed(SEED)
 
+# Get the full path to the data directory relative to this script
 DATA_DIR = Path(__file__).resolve().parent.parent / "data"
+# 9am August 6, 2026 — arbitrary "now" for timestamp generation
 NOW = datetime(2026, 8, 6, 9, 0, 0)
+# Showing alerts for the past 14 days 
 LOOKBACK_DAYS = 14
 
 # ---------------------------------------------------------------------------
@@ -47,14 +50,18 @@ EMPLOYEES = [
 
 
 def make_username(full_name: str) -> str:
+    # Split the full name with a maximum of 1 split
     first, last = full_name.split(" ", 1)
+    # Create a username by concatenating the first letter of the first name and last name, converting to lowercase, 
+    # and removing spaces and apostrophes
     return (first[0] + last).lower().replace(" ", "").replace("'", "")
 
-
+# Make a list of dictionaries with username, full name, and department for each employee
 EMPLOYEE_RECORDS = [
     {"username": make_username(name), "full_name": name, "department": dept}
     for name, dept in EMPLOYEES
 ]
+# Loop through the usernames, then through the departments to select only the IT department usernames
 USERNAMES = [e["username"] for e in EMPLOYEE_RECORDS]
 IT_ADMINS = [e["username"] for e in EMPLOYEE_RECORDS if e["department"] == "it"]
 
@@ -68,13 +75,18 @@ SERVERS = [
 ]
 
 # --- host -> internal IP map ------------------------------------------------
-
+# Create employee workspace hostnames (WKS-<USERNAME>) and server hostnames
 HOSTS = [f"WKS-{u.upper()}" for u in USERNAMES] + [name for name, _ in SERVERS]
+
+# Create a mapping of hostnames to internal IP addresses
 HOST_IP = {}
 _wks_subnet = list(range(10, 250))
+# Shuffle the workstation subnet list to randomize the assignment of IP addresses to workstations
 random.shuffle(_wks_subnet)
+# Get the index and host for each username and convert it to a workstation identifier
 for i, h in enumerate([f"WKS-{u.upper()}" for u in USERNAMES]):
     HOST_IP[h] = f"10.42.10.{_wks_subnet[i]}"
+# Create a mapping of server roles to subnets for internal IP addresses
 _server_subnets = {"web": 20, "app": 21, "database": 22, "build": 23,
                     "network": 24, "storage": 25, "domain_controller": 26, "backup": 27}
 for name, role in SERVERS:
@@ -85,6 +97,7 @@ SERVER_NAMES = [name for name, _ in SERVERS]
 
 # --- external IP pools (RFC 5737 documentation ranges only) ----------------
 
+# Fictitious external IPs for safe vendor endpoints
 DOC_RANGES = ["192.0.2", "198.51.100", "203.0.113"]
 
 BENIGN_VENDORS = {
@@ -104,6 +117,8 @@ def random_doc_ip():
 # Helpers
 # ---------------------------------------------------------------------------
 
+# Generate a random timestamps assigning weights to where suspicious activity is more likely to occur during off-hours 
+# or business hours based on the alert type.
 def rand_timestamp(business_hours=True):
     day_offset = random.uniform(0, LOOKBACK_DAYS)
     t = NOW - timedelta(days=day_offset)
@@ -120,7 +135,8 @@ def rand_timestamp(business_hours=True):
         )[0]
     return t.replace(hour=hour, minute=random.randint(0, 59), second=random.randint(0, 59)).isoformat()
 
-
+# Convert a label into a severity level, with some randomness for false positives and needs investigation cases. 
+# True positives retain their base severity.
 def severity_for(label, base):
     """base: rough severity if this were a true positive, per alert type."""
     if label == "false_positive":
@@ -136,6 +152,7 @@ ALERT_COUNTER = 0
 def next_id():
     global ALERT_COUNTER
     ALERT_COUNTER += 1
+    # Format the alert ID as "ALERT-XXXXX" where XXXXX is a zero-padded number
     return f"ALERT-{ALERT_COUNTER:05d}"
 
 

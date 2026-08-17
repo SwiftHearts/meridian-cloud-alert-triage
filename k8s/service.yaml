@@ -1,3 +1,7 @@
+# Create a stable address for the meridian-triage-api application inside the Kubernetes cluster.
+# Forward to whatever pods are most healthy and ready to serve requests. The LoadBalancer service 
+#type will provision an external IP address for the application, allowing it to be accessed from outside the cluster. 
+#The service listens on port 80 and forwards traffic to port 8000 on the selected pods.
 apiVersion: v1
 kind: Service
 metadata:

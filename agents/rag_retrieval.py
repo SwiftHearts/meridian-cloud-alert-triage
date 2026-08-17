@@ -36,7 +36,7 @@ _openai_client = AzureOpenAI(
     api_version=OPENAI_API_VERSION,
 )
 
-
+# Embed the alert's raw description
 def retrieve_playbook_guidance(alert: dict, k: int = 3) -> list[dict]:
     """Top-k playbook/ATT&CK chunks relevant to this alert's type and description."""
     embedding = _openai_client.embeddings.create(
